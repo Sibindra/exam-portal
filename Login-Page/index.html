@@ -7,49 +7,102 @@
         <title>login</title>
 
         <!-- css link -->
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <!-- body page  -->
-        <div id="hero">
-            <!-- container with svg  -->
-            <div id="svg-container">
-                <img src="/images/examartwork.svg" alt="image not found" id="examArtwork">
-            </div>
-
-            <!-- container -->
-            <div id="login-container">
-                
-                <!-- title field -->
-                <h1 id="title">
-                    Welcome to the Exam Portal
-                </h1>
-
-                <!-- article field -->
-                <div id="article">
-                    <!-- email field -->
-                    <h3 id="label">Email</h3>
-                    <input type="email" id="email" name="email" class="field" placeholder="Please Enter Your Email Address">
-                    
-                    <!-- password field -->
-                    <h3 id="label">Password</h3>
-                    <input type="password" name="password" id="password" class="field" placeholder="Please Enter Your Password">
+        <!-- TODO: email and password verification -->
+        <form action="index.php" method="post">
+            <!-- body page  -->
+            <div id="hero">
+                <!-- container with svg  -->
+                <div id="svg-container">
+                    <img
+                        src="/images/examartwork.svg"
+                        alt="image not found"
+                        id="examArtwork"
+                    />
                 </div>
 
-                <!-- section field -->
-                <div id="section">
-                    <!-- remember me -->
-                    <input type="checkbox" name="rememberMe" id="rememberMe">
-                    <label for="rememberMe" class="section-label">Remember Me</label>
+                <!-- container -->
+                <div id="login-container">
+                    <!-- title field -->
+                    <h1 id="title">Welcome to the Exam Portal</h1>
 
-                    <!-- forgot password -->
-                    <h2 class="section-label" id="forgotPassword">Forgot Password</h2>
+                    <!-- article field -->
+                    <div id="article">
+                        <!-- email field -->
+                        <div id="email-field">
+                            <h3 id="label">Email</h3>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                class="field"
+                                placeholder="Please Enter Your Email Address"
+                            />
+                        </div>
+
+                        <!-- password field -->
+                        <div id="password-field">
+                            <h3 id="label">Password</h3>
+                            <input
+                                type="password"
+                                name="password"
+                                id="password"
+                                class="field"
+                                placeholder="Please Enter Your Password"
+                            />
+
+                            <!-- eye icon -->
+                            <i id="togglePassword">
+                                <span>
+                                    <img
+                                        src="/images/eyes/eye-on.svg"
+                                        alt="image not found"
+                                        id="eye-on"
+                                        class="eye"
+                                    />
+
+                                    <img
+                                        src="/images/eyes/eye-off.svg"
+                                        alt="image not found"
+                                        id="eye-off"
+                                        class="eye"
+                                    />
+                                </span>
+                            </i>
+                        </div>
+                    </div>
+
+                    <!-- section field -->
+                    <div id="section">
+                        <!-- remember me -->
+                        <div id="checkbox">
+                            <input
+                                type="checkbox"
+                                name="rememberMe"
+                                id="rememberMe"
+                            />
+                            <label for="rememberMe" class="section-label"
+                                >Remember Me</label
+                            >
+                        </div>
+
+                        <!-- forgot password -->
+                        <!-- TODO: add a href for forget password -->
+                        <a class="section-label" id="forgotPassword" href="#"
+                            >Forgot Password</a
+                        >
+                    </div>
+
+                    <!-- button -->
+                    <div id="button">
+                        <button id="login-btn">Login</button>
+                    </div>
                 </div>
-
-                <!-- button -->
-                <button id="login-btn">Login</button>
-
             </div>
-        </div>
+        </form>
+        <!-- js link -->
+        <script src="index.js"></script>
     </body>
 </html>
