@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#hero{
+    /* dotted cross background on grey color */
+    background: url(/images/Background.png);
+    
+    background-color: #cfcfcf;
+    height: 100vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#login-container,#svg-container{
+    border: 1px solid red;
+}
