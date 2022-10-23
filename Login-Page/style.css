@@ -1,13 +1,18 @@
-*{
+/* font name:manrope */
+@import url('http://fonts.cdnfonts.com/css/manrope');
+
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Manrope',system-ui;
 }
 
-#hero{
+/* complete body  */
+#hero {
     /* dotted cross background on grey color */
     background: url(/images/Background.png);
-    
+
     background-color: #cfcfcf;
     height: 100vh;
 
@@ -16,6 +21,11 @@
     align-items: center;
 }
 
-#login-container,#svg-container{
+/* borders for each different components */
+#login-container,
+#svg-container,
+#article,
+#section,
+#button {
     border: 1px solid red;
 }

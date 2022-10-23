@@ -14,12 +14,41 @@
         <div id="hero">
             <!-- container with svg  -->
             <div id="svg-container">
-                container svg
+                <img src="/images/examartwork.svg" alt="image not found">
             </div>
 
             <!-- container -->
             <div id="login-container">
-                login container
+                
+                <!-- title field -->
+                <h1 id="title">
+                    Welcome to the Exam Portal
+                </h1>
+
+                <!-- article field -->
+                <div id="article">
+                    <!-- email field -->
+                    <h3 id="label">Email</h3>
+                    <input type="email" id="email" name="email" class="field" placeholder="Please Enter Your Email Address">
+                    
+                    <!-- password field -->
+                    <h3 id="label">Password</h3>
+                    <input type="password" name="password" id="password" class="field" placeholder="Please Enter Your Password">
+                </div>
+
+                <!-- section field -->
+                <div id="section">
+                    <!-- remember me -->
+                    <input type="checkbox" name="rememberMe" id="rememberMe">
+                    <label for="rememberMe" class="section-label">Remember Me</label>
+
+                    <!-- forgot password -->
+                    <h2 class="section-label" id="forgotPassword">Forgot Password</h2>
+                </div>
+
+                <!-- button -->
+                <button id="login-btn">Login</button>
+
             </div>
         </div>
     </body>
