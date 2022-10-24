@@ -152,3 +152,15 @@
     width: 20px;
     height: 20px;
 }
+
+/* email invalid msg on span
+.msg{
+    display: none;
+    color: #fb344f;
+    font-size: 11px;
+    text-align: center;
+}
+
+#password-msg{
+    font-size: 1px;
+} */
