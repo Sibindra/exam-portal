@@ -1,5 +1,4 @@
 // password toggle function
-const togglePassword = document.getElementById("togglePassword");
 
 const password = document.getElementById("password");
 
