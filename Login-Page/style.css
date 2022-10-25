@@ -53,7 +53,7 @@
 
 #title {
     color: #0b0e90;
-    font-size: 2.5vw;
+    font-size: 28px;
     font-weight: 700;
 }
 
@@ -71,7 +71,7 @@
 }
 
 .section-label {
-    font-size: 1vw;
+    font-size: 2vh;
     font-weight: 500;
     cursor: pointer;
     padding: 5px;
@@ -84,8 +84,7 @@
 
 #label {
     font-weight: bold;
-    font-size: 1vw;
-
+    font-size: 15px;
     color: #0b0e90;
 }
 
@@ -102,9 +101,8 @@
     border-radius: 5px;
     font-weight: 600;
     padding: 1vh;
-    font-size: 1vw;
+    font-size: 15px;
 
-    /* FIXME: */
     position: relative;
 }
 
@@ -127,7 +125,7 @@
     height: 6vh;
     width: 60%;
     /* font-size: calc(17px + 0.390625vw); */
-    font-size: 1vw;
+    font-size: 17px;
 
     color: white;
     font-weight: 500;
@@ -143,36 +141,23 @@
     background-color: #050776;
 }
 
-/* #togglePassword {
+/*FIXME: eye on password */
+#togglePassword {
     position: absolute;
-    margin-left: -30px;
-    margin-top: -10px;
     cursor: pointer;
-    width: 1vw;
-    height: 1vw;
+    margin-left: -2vw;
+    margin-top: 0.625vw;
+}
+
+.eye {
+    position: absolute;
+    width: 20px;
+    height: 20px;
 }
 
 #eye-on {
     display: none;
 }
-
-.eye {
-    width: 1vw;
-    height: 1vw;
-} */
-
-.eye{
-    border: 1px solid black;
-    width: 1vmax;
-    height: 1vmax;
-    cursor: pointer;
-
-    position: absolute;
-   
-
-}
-
-
 
 #image-container {
     display: none;
@@ -180,7 +165,7 @@
 }
 
 /* tablet modes */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
     #svg-container {
         display: none;
     }
@@ -191,11 +176,22 @@
     }
 
     #login-container {
-        height: 60%;
-        width: 50%;
+        padding: 2vw;
+        height: 80%;
+        width: 70%;
     }
 
     #image-container {
         display: block;
+    }
+
+    .eye {
+        width: 12px;
+        height: 12px;
+    }
+
+    #togglePassword {
+        margin-left: -3vw;
+        margin-top: 1.25vw;
     }
 }
