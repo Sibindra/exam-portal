@@ -1,7 +1,5 @@
 # EXAM PORTAL
 
-# Exam Portal
-
 exam portal is an responsive web application to provide an dashboard of all the examination status for examinees and fill exam forms online
 
 # Our Objectives
