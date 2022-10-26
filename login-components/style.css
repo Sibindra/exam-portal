@@ -11,7 +11,7 @@
 
 #hero {
     position: absolute;
-    background: url(/images/Background.png);
+    background: url(./images/Background.png);
 
     background-color: #cfcfcf;
 

@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+#hero{
+    height: 100vh;
+    width: 100%;
+    border: 1px solid red;
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#header,#dataContainer,#Regular,#Back,#Footer{
+    border: 1px solid red;
+    width: 100%;
+}
+
+#header{
+    height: 10%;
+}
+
+#dataContainer,#Regular,#Back{
+    height: 30%;
+}
+
+#Footer{
+    height: 10%;
+}
