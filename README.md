@@ -1,7 +1,67 @@
-# EXAM PORTAL
+# Project-I
 
-exam portal is an responsive web application to provide an dashboard of all the examination status for examinees and fill exam forms online
+# Introduction
 
-# Our Objectives
+Exam Portal is an web application to fill out exam forms and view examination status throughout the course term. It is built on HTML5.
 
-Single-click alternative makes filling form easier, less exhausting and provide massive reach out and easier to access information while providing real-time reports while improving data efficiency and data accuracy
+# Methodology and Tools
+
+Exam Portal is essentialy made using waterfall model for software development and following tools were used for the project 
+
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,mysql,php)](https://skillicons.dev)
+
+
+# Contributing to this project
+
+### Fork the repo to your github
+
+Fork this repository by clicking on the fork button on the top of this page. This will create a copy of this repository in your account.
+
+![Screenshot_20221031_043902](https://user-images.githubusercontent.com/59206903/198995260-af860dcc-85af-4a21-9f56-9c88f9f42690.png)
+
+### Clone the repo
+
+Now clone the forked repository to your machine. Go to your GitHub account, open the forked repository, click on the code button and then click the copy to clipboard icon.
+
+![Screenshot_20221031_045334](https://user-images.githubusercontent.com/59206903/198995285-f8e2abde-61ba-4f87-aecd-207525cbcc0f.png)
+
+Open a terminal and run the following git command:
+
+```markdown
+git clone "copied url"
+```
+
+### Create your branch
+
+Create a branch to make changes into using the following command
+
+```markdown
+git checkout -b <new-branch-name>
+```
+
+### Make your changes and add changes
+
+contribute your changes but make sure to explain your changes through proper comments then add your contributions to git using
+
+```markdown
+git add <changed-file-name>
+```
+
+### Commit and Push changes
+
+commit your changes and push to your repo
+
+```markdown
+git push <changed-file-name>
+```
+
+```markdown
+git push origin -u <your-branch-name>
+```
+
+### Submit your changes for review
+
+If you go to your repository on GitHub, click  `Compare & pull request`button then we will review your code
+
+
+<!-- Copy-paste in your Readme.md file -->
