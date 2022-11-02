@@ -12,6 +12,7 @@
     align-items: center;
     font-size: 30px;
     color: 0B0E90;
+    padding: 50px;
 }
 
 /* buttons */
@@ -49,5 +50,22 @@
 
 #stddetails{
     border: 1px solid red;
+    padding: 50px;
+    margin-left: 44px;
+    margin-right: 44px;
+    font-weight:bold;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:nowrap;
+}
 
+#duepayment{
+    color: red;
+}
+#subdetails{
+    border: 1px solid red;
+    padding-left: 50px;
+}
+#subtable{
+    border: 1px solid red;
 }
