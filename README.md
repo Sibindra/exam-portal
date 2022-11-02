@@ -17,13 +17,13 @@ Exam Portal is essentialy made using waterfall model for software development an
 
 Fork this repository by clicking on the fork button on the top of this page. This will create a copy of this repository in your account.
 
-![Screenshot_20221031_043902](https://user-images.githubusercontent.com/59206903/198995260-af860dcc-85af-4a21-9f56-9c88f9f42690.png)
+![image](https://user-images.githubusercontent.com/59206903/199491617-1a830cd3-e3f3-4d1e-83cb-079cb7feb803.png)
 
 ### Clone the repo
 
 Now clone the forked repository to your machine. Go to your GitHub account, open the forked repository, click on the code button and then click the copy to clipboard icon.
 
-![Screenshot_20221031_045334](https://user-images.githubusercontent.com/59206903/198995285-f8e2abde-61ba-4f87-aecd-207525cbcc0f.png)
+![image](https://user-images.githubusercontent.com/59206903/199491899-b95cb41a-0877-4a3e-81c2-dd76227a0a78.png)
 
 Open a terminal and run the following git command:
 
