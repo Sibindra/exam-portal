@@ -68,4 +68,17 @@
 }
 #subtable{
     border: 1px solid red;
+
+}
+#backsubdetails{
+    border: 1px solid red;
+    padding-left: 50px;
+}
+#regsub{
+    
+}
+#footer{
+    border: 1px solid red;
+    text-align: center;
+    padding: 25px;
 }
