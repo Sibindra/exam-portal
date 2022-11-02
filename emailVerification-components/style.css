@@ -29,6 +29,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+
+    padding: 1vmax;
 }
 
 #footer {
@@ -64,6 +66,8 @@
     margin: 1vw;
 
     font-size: 1vmax;
+    padding: 1vmax;
+    margin: 1vmax;
 }
 
 #btn:hover {
@@ -77,6 +81,27 @@
     background: #f3f8ff;
     border: 1px solid #d9d9d9;
     border-radius: 8px;
+
+
+    border: 3px solid #d9d9d9;
+}
+
+/* hide arrows from input  */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.input:focus{
+    border: 3px solid #1573fe;
+    outline: none !important;
 }
 
 #codeContainer {
@@ -87,6 +112,9 @@
 
 .input {
     margin: 1vw;
+    padding: 1vmin;
+    text-align: center;
+    font-weight: bolder;
 }
 
 #resend {
@@ -97,4 +125,45 @@
 
 #resend:hover {
     color: #050776;
+}
+
+/* tablet modes */
+@media only screen and (max-width: 1024px) {
+    #container {
+        height: 70%;
+        width: 90%;
+    }
+
+    .input {
+        width: 15vw;
+    }
+
+    #btn {
+        height: 7vh;
+    }
+    #title {
+        font-size: 5vmax;
+    }
+
+    #description ,#btn, #resend{
+        font-size: 2vmax;
+    }
+}
+
+/* mobile phones */
+@media only screen and (max-width: 500px) {
+    #container {
+        height: 100vh;
+        width: 100%;
+        padding: 3vmax;
+    }
+
+    #btn{
+        width: 35vw;
+    }
+
+    .input{
+        width: 20vw;
+        height: 60px;
+    }
 }
