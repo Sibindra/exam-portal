@@ -1,16 +1,14 @@
 <?php
-   
-   $server="localhost";
-   $username="root";
-   $password="";
-   $dB="testdB";
+// connecting to backend
+$server = "localhost";
+$username = "root";
+$password = "";
+$dB = "testdB";
 
-   $con=mysqli_connect($server,$username,$password,$dB);
+$con = mysqli_connect($server, $username, $password, $dB);
 
-   if(!$con){
-    die("connection failed due to:'$con->error()'");
-   }
-   else{
+if (!$con) {
+    die("Connect failed: %s\n". $conn -> error);
+} else {
     echo "Sucess";
-    }
-?>
+}
