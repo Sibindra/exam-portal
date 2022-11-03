@@ -61,7 +61,75 @@ git push origin -u <your-branch-name>
 
 ### Submit your changes for review
 
-If you go to your repository on GitHub, click  `Compare & pull request`button then we will review your code
+If you go to your repository on GitHub, click  `Compare & pull request`button then we will review your code
 
+# Setting up Backend for contribution
 
-<!-- Copy-paste in your Readme.md file -->
+## Prerequisites
+
+- working xampp installation
+- proper permission to htdocs folder
+
+## Steps for dev setup
+
+- fork and then clone repo forked into htdocs folder in your system
+    
+    ```jsx
+    git clone "url"
+    ```
+    
+    the htdocs folder is located on following path according to devices
+    
+    1. linux: `/opt/lampp/htdocs`
+    2. windows: `C:\xampp\htdocs\`
+    3. osx: `/Applications/XAMPP/htdocs`
+- go to `[localhost/phpmyadmin](http://localhost/phpmyadmin)` and select SQL
+    
+    
+
+## Prerequisites
+
+- working xampp installation
+- proper permission to htdocs folder
+
+## Steps for dev setup
+
+- fork and then clone repo forked into htdocs folder in your system
+    
+    ```jsx
+    git clone "url"
+    ```
+    
+    the htdocs folder is located on following path according to devices
+    
+    1. linux: `/opt/lampp/htdocs`
+    2. windows: `C:\xampp\htdocs\`
+    3. osx: `/Applications/XAMPP/htdocs`
+- go to `[localhost/phpmyadmin](http://localhost/phpmyadmin)` and select SQL
+    
+![Screenshot from 2022-11-03 18-49-54](https://user-images.githubusercontent.com/59206903/199731257-410bb02a-da53-4ea6-b815-c0a864cd1dfd.png)
+
+    
+- create a database as follows
+    
+    ```sql
+    CREATE DATABASE Exam-Portal;
+    ```
+    
+- then go to db Exam-Portal and paste the following instructions on SQL section
+    
+    ```sql
+    CREATE TABLE `Exam-Portal`.`users` (`id` INT NOT NULL AUTO_INCREMENT , `Email` VARCHAR(255) NOT NULL , `Password` VARCHAR(255) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+    ```
+    
+- create a database as follows
+    
+    ```sql
+    CREATE DATABASE Exam-Portal;
+    ```
+    
+- then go to db Exam-Portal and paste the following instructions on SQL section
+    
+    ```sql
+    CREATE TABLE `Exam-Portal`.`users` (`id` INT NOT NULL AUTO_INCREMENT , `Email` VARCHAR(255) NOT NULL , `Password` VARCHAR(255) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+    ```
