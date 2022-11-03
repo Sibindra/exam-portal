@@ -63,5 +63,72 @@ git push origin -u <your-branch-name>
 
 If you go to your repository on GitHub, click  `Compare & pull request`button then we will review your code
 
+# Setting up Backend for contribution
 
-<!-- Copy-paste in your Readme.md file -->
+## Prerequisites
+
+- working xampp installation
+- proper permission to htdocs folder
+
+## Steps for dev setup
+
+- fork and then clone repo forked into htdocs folder in your system
+    
+    ```jsx
+    git clone "url"
+    ```
+    
+    the htdocs folder is located on following path according to devices
+    
+    1. linux: `/opt/lampp/htdocs`
+    2. windows: `C:\xampp\htdocs\`
+    3. osx: `/Applications/XAMPP/htdocs`
+- go to `[localhost/phpmyadmin](http://localhost/phpmyadmin)` and select SQL
+    
+    <!-- img1 --># Setting up Backend for contribution
+
+## Prerequisites
+
+- working xampp installation
+- proper permission to htdocs folder
+
+## Steps for dev setup
+
+- fork and then clone repo forked into htdocs folder in your system
+    
+    ```jsx
+    git clone "url"
+    ```
+    
+    the htdocs folder is located on following path according to devices
+    
+    1. linux: `/opt/lampp/htdocs`
+    2. windows: `C:\xampp\htdocs\`
+    3. osx: `/Applications/XAMPP/htdocs`
+- go to `[localhost/phpmyadmin](http://localhost/phpmyadmin)` and select SQL
+    
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3d42d298-af91-4148-9000-72d850cf47f3/Untitled.png)
+    
+- create a database as follows
+    
+    ```sql
+    CREATE DATABASE Exam-Portal;
+    ```
+    
+- then go to db Exam-Portal and paste the following instructions on SQL section
+    
+    ```sql
+    CREATE TABLE `Exam-Portal`.`users` (`id` INT NOT NULL AUTO_INCREMENT , `Email` VARCHAR(255) NOT NULL , `Password` VARCHAR(255) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+    ```
+    
+- create a database as follows
+    
+    ```sql
+    CREATE DATABASE Exam-Portal;
+    ```
+    
+- then go to db Exam-Portal and paste the following instructions on SQL section
+    
+    ```sql
+    CREATE TABLE `Exam-Portal`.`users` (`id` INT NOT NULL AUTO_INCREMENT , `Email` VARCHAR(255) NOT NULL , `Password` VARCHAR(255) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+    ```
