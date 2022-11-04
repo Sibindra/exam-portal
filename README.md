@@ -28,7 +28,7 @@ Now clone the forked repository to your machine. Go to your GitHub account, open
 Open a terminal and run the following git command:
 
 ```markdown
-git clone "copied url"
+git clone <copied url>
 ```
 
 ### Create your branch
@@ -75,7 +75,7 @@ If you go to your repository on GitHub, click  `Compare & pull request`button th
 - fork and then clone repo forked into htdocs folder in your system
     
     ```jsx
-    git clone "url"
+    git clone <url>
     ```
     
     the htdocs folder is located on following path according to devices
