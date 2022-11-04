@@ -55,6 +55,11 @@ commit your changes and push to your repo
 git push <changed-file-name>
 ```
 
+
+```markdown
+git commit -m "commit-message"
+```
+
 ```markdown
 git push origin -u <your-branch-name>
 ```
