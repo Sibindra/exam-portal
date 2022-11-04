@@ -1,0 +1,98 @@
+/* NAVBAR */
+
+.navbar{
+  
+    display: flex;
+}
+
+/* LOGO */
+.logo img{
+    width: 150px;
+    
+
+}
+.name{
+    margin: 30px 0px 0px 0px;
+    color: rgb(67, 61, 146);
+}
+
+.Info{
+    border: 2px solid rgb(253, 253, 253);
+    margin: 120px 3px 0px 500px;
+    display: block;
+    flex-direction: column;
+    width: 60%;
+    border-radius: 15px;
+    box-shadow:20px 20px 50px grey;
+    
+   
+   
+    
+}
+
+.bill{
+    color: red;
+    text-align: center;
+}
+
+.detail{
+    margin: 18px;
+    padding: 6px;
+}
+
+.QR{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    margin: 29px ;
+}
+
+.QR img{
+    height: 300px;
+    width: 300px;
+    margin: 32px 74px 0px 100px;
+    box-shadow: 20px 20px 50px grey;
+}
+
+.QR h4{
+    font-size: 1.8rem;
+    margin: auto;
+    
+
+}
+
+@media screen and (max-width:600px){
+    .Info{
+        border: 2px solid rgb(253, 253, 253);
+        margin: 120px 3px 0px 0px;
+        display: block;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 15px;
+        box-shadow:20px 20px 50px grey;
+        height: 180px;
+        font-size: 0.6rem;
+    }
+
+    .QR img{
+        height: 100px;
+        width: 100px;
+        margin: 32px 74px 0px 0px;
+        box-shadow: 20px 20px 50px grey;
+    }
+
+    .QR h4{
+        font-size: 0.7rem;
+        margin: auto;
+        margin: 13px 0px 0px 0px;
+    }  
+    
+    .name{
+        margin: 30px 0px 0px 0px;
+        color: rgb(67, 61, 146);
+        font-size: 0.8rem;
+    }
+      
+}
+
+
