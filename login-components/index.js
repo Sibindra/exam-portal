@@ -26,27 +26,48 @@ const Emsg = document.getElementById("email-msg");
 
 const Pmsg = document.getElementById("password-msg");
 
-login.onclick = () => {
+login.onclick= validation();
+
+
+function validation(){
     var mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    var passwordFormat =
-        /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/;
+    var passwordFormat= /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/;
 
     if (email.value.match(mailFormat) && password.value.match(passwordFormat)) {
         // valid email and password
         email.style.border = "1px solid green";
         password.style.border = "1px solid green";
-    } else if (email.value.match(mailFormat)) {
-        // valid email only
+
+        return true;
+
+
+    } else if (email.value.match(mailFormat) && password.value.unmatch(passwordFormat)) {
+        // valid email invalid password
         email.style.border = "1px solid green";
         password.style.border = "1px solid #fb344f";
-    } else if (password.value.match(passwordFormat)) {
-        // valid password
 
+        return false;
+    } else if (password.value.match(passwordFormat) && email.value.unmatch(emailFormat)) {
+        // valid password invalid email
         email.style.border = "1px solid #fb344f";
         password.style.border = "1px sold green";
+
+
+        return false;
     } else {
         // invalid email and password
         email.style.border = "1px solid #fb344f";
         password.style.border = "1px solid #fb344f";
+
+        return false;
     }
 };
+
+// dont run form if validation fails
+const form=document.getElementById('form');
+
+if (validation()==true){
+    form.action="./index.php";
+
+    console.log("works")
+}
