@@ -18,12 +18,13 @@
 
 .Info{
     border: 2px solid rgb(253, 253, 253);
-    margin: 120px 3px 0px 500px;
+    margin: 100px 3px 0px 250px;
     display: block;
     flex-direction: column;
-    width: 60%;
+    width: 70%;
     border-radius: 15px;
     box-shadow:20px 20px 50px grey;
+    height: 350px;
     
    
    
@@ -42,21 +43,21 @@
 
 .QR{
     display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-    margin: 29px ;
+    justify-content: space-between;
 }
 
 .QR img{
     height: 300px;
     width: 300px;
-    margin: 32px 74px 0px 100px;
+    margin: 32px 54px 0px 0px;
     box-shadow: 20px 20px 50px grey;
 }
 
 .QR h4{
     font-size: 1.8rem;
     margin: auto;
+
+    
     
 
 }
@@ -64,27 +65,33 @@
 @media screen and (max-width:600px){
     .Info{
         border: 2px solid rgb(253, 253, 253);
-        margin: 120px 3px 0px 0px;
-        display: block;
+        margin: 70px 3px 0px 0px;
+        display: flex;
         flex-direction: column;
         width: 100%;
         border-radius: 15px;
         box-shadow:20px 20px 50px grey;
-        height: 180px;
-        font-size: 0.6rem;
+        height: 300px;
+        font-size: 0.8rem;
+    }
+
+    .QR{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+
     }
 
     .QR img{
-        height: 100px;
-        width: 100px;
-        margin: 32px 74px 0px 0px;
+        height:200px;
+        width: 200px;
+        margin: auto;
         box-shadow: 20px 20px 50px grey;
     }
 
     .QR h4{
-        font-size: 0.7rem;
-        margin: auto;
-        margin: 13px 0px 0px 0px;
+        display: none;
     }  
     
     .name{
