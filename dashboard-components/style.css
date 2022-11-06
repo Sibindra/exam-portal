@@ -110,9 +110,10 @@
   flex-direction: column;
 }
 #footer{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     text-align: center;
     padding: 25px;
+    background-color: #EFEAE6;
 }
 /* Table headings */
 .subHead{
