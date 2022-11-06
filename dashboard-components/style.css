@@ -96,18 +96,20 @@
 }
 #subdetails{
     /* border: 1px solid red; */
-    padding-left: 50px;
     display: flex;
     flex-direction: column;
+    padding-left: 50px;
 }
 /* Table div tags */
-#subtable{
-   
-}
 
 #backsubdetails{
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.subtable{
+    border-spacing: 0px;
 }
 #footer{
     /* border: 1px solid red; */
@@ -144,7 +146,3 @@ tr{
     background-color:#F1FFE5;
 }
 
-#backsubdetails{
-    /* border: 1px solid red; */
-    padding-left: 50px;
-}
