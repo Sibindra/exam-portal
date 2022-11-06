@@ -53,3 +53,27 @@ h2{
     box-shadow: 30px 30px 60px grey;
 }
 
+
+@media  screen and (max-width:600px) {
+    .container1{
+        height: 100vh;
+    }
+
+    input[type='text']{
+        font-size: 27px;
+    }
+
+    h2{
+        margin-bottom: 150px;
+    }
+
+    #bt{
+        width:200px;
+        margin-top: 30px;
+    }
+
+
+
+
+    
+}
