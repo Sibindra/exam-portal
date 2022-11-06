@@ -7,7 +7,7 @@
     float: right;
     z-index: -1;
     font-size: 1.5rem;
-    background-color: rgb(141, 109, 201);
+    background-color: rgb(81, 16, 201);
     color: white;
     cursor: pointer;
     height: 60px;
@@ -17,5 +17,5 @@
 }
 
 .btn:hover{
-    background-color:rgb(110, 67, 189) ;
+    background-color:rgb(58, 36, 182) ;
 }
