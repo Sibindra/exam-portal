@@ -11,7 +11,7 @@
     </head>
     <body>
         <!-- index.php has  -->
-        <form method="post" id="form" action="#">
+        <form method="post" id="form" action="./backend-components/index.php">
             <!-- body page  -->
             <div id="hero">
                 <!-- container with svg  -->
@@ -56,7 +56,7 @@
                             <h3 id="label">Password</h3>
                             <input
                                 type="password"
-                                name="password"
+                                side PHP page, we request for the data submitted by the form and display the result.                name="password"
                                 id="password"
                                 class="field"
                                 placeholder="Please Enter Your Password"
@@ -96,14 +96,13 @@
 
                         <!-- forgot password -->
                         <!-- TODO: add a href for forget password -->
-                        <a class="section-label" id="forgotPassword" href="#"
+                        <a class="section-label" id="forgotPassword" name="forgotPassword" href="backend-components/emailVerification-components/verification.php"
                             >Forgot Password</a
                         >
                     </div>
 
                     <!-- button -->
                     <div id="button">
-                        <!-- TODO: button click address to dashboard -->
                         <button id="login-btn">Login</button>
                     </div>
                 </div>
@@ -114,5 +113,6 @@
         <script src="login-components/togglePassword.js"></script>
         <!-- js to validate email and password -->
         <script src="login-components/verification.js"></script>
+
     </body>
 </html>

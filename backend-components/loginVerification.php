@@ -1,24 +1,7 @@
 <?php
-// connection to localhost
-$server = "localhost";
-$username = "root";
-$password = "";
-$dB = "Exam-Portal";
-
-$con = mysqli_connect($server, $username, $password, $dB);
-
-if (!$con) {
-    die("Connect failed:");
-} else {
-    // echo "Sucess";
-
-
-    // variables
+// variables
     $email = $_POST['email'];
     $password = $_POST['password'];
-
-
-
 
     // echo $email;
 
@@ -33,18 +16,16 @@ if (!$con) {
     
     // echo $num;
     
-    // if atleast 1  the present
+    // MATCH IN DATABASE
     if ($num > 0) {
-
         // code for match found
-        echo "MATCH FOUND";
+        // echo "MATCH FOUND";
+        header('Location: ../dashboard-components/dashboard.html');
+        exit;
     } else {
-        
         // code for match not found
-        echo "NO MATCH";
+        // echo "NO MATCH";
+        header('Location: ../index.html');
+        exit;
     }
-}
-    
-// }
-
 ?>

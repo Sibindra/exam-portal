@@ -7,8 +7,13 @@
         <title>verification</title>
 
         <link rel="stylesheet" href="style.css" />
+
     </head>
     <body>
+
+        <?php
+            include "../forgotPassword.php"
+        ?>
         <div id="hero">
             <div id="container">
                 <div id="header">
@@ -36,4 +41,5 @@
     </body>
 
     <script src="verification.js"></script>
+
 </html>
