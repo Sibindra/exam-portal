@@ -5,33 +5,176 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="hero">
-        <div id="header">
-            header
+    <div id="heropage">
+
+        <div id = "header">
+            
+            <div id="welcome">
+                Hi,
+                <div id="wave">
+                    👋
+                </div>
+                <br>
+                This is your Exam Portal Dashboard! 
+            </div>
+            
+            <div id="buttons">
+                <button id="export">
+                    Export
+                </button>
+                <button id="fillform">
+                    Fill Form
+                </button>
+            </div>
+
         </div>
 
-        <div id="dataContainer">
-            data container
+        <div id="stddetails">
+            <span class="symbol">Symbol no: 201903</span>
+            <span class="name">Name: David Sparrow</span>
+            <span class="faculty">Faculty: Science and Technology</span>
+            <span class="year">Year: 2019</span>
+            <span class="noc">Name of college: Nepal College of Information and Technology</span>
+            <span class="university">University: Pokhara University</span>
+            <span class="regno">Reg no: 2019-12-56</span>
+            <span class="rollno">Roll no: 191786</span>
+            <span class="programme">Programme: Bachelors</span>
+            <span class="duepayment">Due Payment: Rs. 1,25,000</span>
+            <span class="passportsizephoto"></span>                
+        </div>
+        
+
+
+
+
+
+        <!-- Subject details -->
+            <div id="subdetails">
+                <h2 id="regSub">Regular Subjects</h2>
+
+                <table id="subtable" border="1">
+                    <tr id="tablehead">
+                        <th>SN</th>
+                        <th>Subject</th>
+                        <th>Subject Code</th>
+                        <th>Credit Hrs</th>
+                        <th>Barrier Status</th>
+                        <th>Barrier Subject</th>
+                        <th>Barrier Semester</th>
+                    </tr>
+
+                    <tr>
+                        <td>01</td>
+                        <td>Enigeering Mathematics II</td>
+                        <td>1213</td>
+                        <td>3 hrs</td>
+                        <td>Barrier</td>
+                        <td>Engineering Mathematics IV</td>
+                        <td>4th</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>02</td>
+                        <td>Mathematical Foundation in Computer Science</td>
+                        <td>1114</td>
+                        <td>2 hrs</td>
+                        <td>Not Barrier</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>03</td>
+                        <td>Physics</td>
+                        <td>5498</td>
+                        <td>3 hrs</td>
+                        <td>Not Barrier</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td>04</td>
+                        <td>Object Oriented Programming in C++</td>
+                        <td>2014</td>
+                        <td>4 hrs</td>
+                        <td>Not Barrier</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+            </div>
+
+
+        <!-- Back Subject details -->
+        <div id="backsubdetails">
+            <h2>Back Subjects</h2>
+
+            <table id="subtable" border="1">
+                <tr id="tablehead">
+                    <th>SN</th>
+                    <th>Subject</th>
+                    <th>Subject Code</th>
+                    <th>Credit Hrs</th>
+                    <th>Barrier Status</th>
+                    <th>Barrier Subject</th>
+                    <th>Barrier Semester</th>
+                </tr>
+
+                <tr>
+                    <td>01</td>
+                    <td>Enigeering Mathematics II</td>
+                    <td>1213</td>
+                    <td>3 hrs</td>
+                    <td>Barrier</td>
+                    <td>Engineering Mathematics IV</td>
+                    <td>4th</td>
+                </tr>
+                
+                <tr>
+                    <td>02</td>
+                    <td>Mathematical Foundation in Computer Science</td>
+                    <td>1114</td>
+                    <td>2 hrs</td>
+                    <td>Not Barrier</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                
+                <tr>
+                    <td>03</td>
+                    <td>Physics</td>
+                    <td>5498</td>
+                    <td>3 hrs</td>
+                    <td>Not Barrier</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+
+                <tr>
+                    <td>04</td>
+                    <td>Object Oriented Programming in C++</td>
+                    <td>2014</td>
+                    <td>4 hrs</td>
+                    <td>Not Barrier</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+            </table>
         </div>
 
-        <div id="Regular">
-            regular
+        <!-- footer -->
+        <div id="footer">
+            All Rights Reserved to the Team 
         </div>
 
-        <div id="Back">
-            back
-        </div>
 
-        <div id="Footer">
-            footer
-        </div>
+
+
+
     </div>
-
-    <!-- js  -->
-    <script src="index.js"></script>
 </body>
 </html>
