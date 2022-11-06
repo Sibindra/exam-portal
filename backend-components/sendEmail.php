@@ -1,5 +1,8 @@
 <?php
 
+
+
+
 // connection to localhost
 $server = "localhost";
 $username = "root";
@@ -100,8 +103,7 @@ if (!$con) {
     //     echo 'The email message was sent.';
     // }
 
-    use PHPMailer\PHPMailer\PHPMailer;
-    use PHPMailer\PHPMailer\Exception;
+
   
     require 'vendor/autoload.php';
   
