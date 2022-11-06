@@ -1,16 +1,21 @@
 <?php
-   
-   $server="localhost";
-   $username="root";
-   $password="";
-   $dB="testdB";
 
-   $con=mysqli_connect($server,$username,$password,$dB);
+// connection to localhost
+$server = "localhost";
+$username = "root";
+$password = "";
+$dB = "Exam-Portal";
 
-   if(!$con){
-    die("connection failed due to:'$con->error()'");
-   }
-   else{
+$con = mysqli_connect($server, $username, $password, $dB);
+
+if (!$con) {
+    die("Connect failed:");
+} else {
     echo "Sucess";
-    }
+
+}
+
+// login verification
+include "./loginVerification.php";
+    
 ?>
