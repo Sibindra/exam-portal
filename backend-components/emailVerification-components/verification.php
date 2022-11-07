@@ -20,7 +20,6 @@
 
                     <h3 id="description">
                         Enter the code we have sent you at your email address
-                        <span>test@test.com</span>
                     </h3>
                 </div>
 
