@@ -17,8 +17,17 @@ if (!$conn) {
     $to_email=$_POST['email'];
 
     // generate 4 digit code
-    $code = mt_rand(1111,9999);
+    // FIXME: mt_rand generaes new valie everytime it is called
+    // $code = mt_rand(1111,9999);
+
+    function generateRandom(){
+        return mt_rand(1111,9999);
+    }
+
+    $code=generateRandom();
+    
    
+
     require 'vendor/autoload.php';
 
 //Create an instance; passing `true` enables exceptions
@@ -42,16 +51,16 @@ try {
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = 'exam portal verification code';
-    $mail->Body    = "Your verification code is: '$code'";
+    $mail->Body    = "Your verification code is:'$code'";
+    // echo $code;
 
     $mail->send();
     echo 'Message has been sent';
 
     header('Location: Password/pw.php');
-    echo $code;
     exit;
 } catch (Exception $e) {
-    // echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
     
 
