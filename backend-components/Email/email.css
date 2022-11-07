@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    font-family: Poppins, system-ui;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    margin: none;
+    background-color: #cfcfcf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container1 {
+    height: 70%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 6px;
+}
+
+#n {
+    font-size: 1vmax;
+    margin: 2vw;
+    border: 1px solid #dfdfdf;
+    padding: 1vh;
+    color: #dfdfdf;
+    border-radius: 4px;
+    text-align: center;
+}
+
+h2 {
+    color: #0b0e90;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bt {
+    height: 120%;
+    width: 60%;
+    padding: 1vh;
+    font-size: 17px;
+
+    color: white;
+    font-weight: 500;
+    background-color: #0b0e90;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    margin: 1vmax;
+}
+
+.heading {
+    text-align: center;
+    margin: 2vw;
+}
+
+.new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bt:hover {
+    background-color: #050776;
+}
+
+@media screen and (max-width: 600px) {
+    .container1 {
+        height: 100vh;
+        width: 100%;
+    }
+
+    #n {
+        font-size: 1vw;
+    }
+
+    h2 {
+        margin-bottom: 160px;
+    }
+
+    #bt {
+        width: 150px;
+        margin-top: 50px;
+    }
+}
