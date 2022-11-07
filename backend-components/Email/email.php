@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="email.css">
 </head>
 <body>
-    <div class="container">
-        <div class="container1">
-            <form action="../sendEmail.php" method="post">
+    <form action="../sendEmail.php" method="post">
+    <div class="hero">
+        <div class="container">
 
                 <div class="heading">
-                    <h2>Please enter your email</h2>
+                    <h2 id="title">Please enter your email</h2>
                 </div>
 
                 <div class="new">
@@ -23,9 +23,9 @@
                 <div class="btn">
                     <button id="bt">Submit</button>
                 </div>
-            </form>
-
+                
+            </div>
         </div>
-    </div>
+    </form>
 </body>
 </html>

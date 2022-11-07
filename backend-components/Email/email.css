@@ -8,57 +8,76 @@
     font-family: Poppins, system-ui;
 }
 
-.container {
+.hero{
+    background: url(../Background.png);
+    background-color: #D9D9D9;
     height: 100vh;
     width: 100%;
-    margin: none;
-    background-color: #cfcfcf;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+
 }
 
-.container1 {
+.container{
+    width: 80%;
     height: 70%;
-    width: 60%;
+
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+    justify-content: space-around;
     background-color: white;
     border-radius: 6px;
+
 }
 
 #n {
     font-size: 1vmax;
-    margin: 2vw;
     border: 1px solid #dfdfdf;
-    padding: 1vh;
-    color: #dfdfdf;
+    padding: 3vh;
+    background-color: #f3f8ff;
+    color: #212121;
     border-radius: 4px;
     text-align: center;
+    border: 1px solid #d6d6d6;
+
+    width: 60%;
+    height: 10%;
+}
+
+#n:focus {
+    outline: none !important;
+    border: 3px solid #1573fe;
+}
+
+#n::placeholder {
+    color: #dfdfdf;
 }
 
 h2 {
     color: #0b0e90;
     font-weight: bold;
-    font-size: 1.7rem;
+    font-size: 2vmax;
+
+    /* border: 1px solid red; */
+
 }
 
 .btn {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: 1px solid red; */
 }
 
 #bt {
-    height: 120%;
-    width: 60%;
-    padding: 1vh;
+    width: 10vw;
     font-size: 17px;
 
     color: white;
     font-weight: 500;
+
     background-color: #0b0e90;
     cursor: pointer;
     border: none;
@@ -66,12 +85,12 @@ h2 {
 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
-    margin: 1vmax;
+    padding: 1vmax;
 }
 
 .heading {
     text-align: center;
-    margin: 2vw;
+    /* margin: 3vmax; */
 }
 
 .new {
@@ -85,17 +104,18 @@ h2 {
 }
 
 @media screen and (max-width: 600px) {
-    .container1 {
+    .container {
         height: 100vh;
         width: 100%;
     }
 
     #n {
-        font-size: 1vw;
+        font-size: 2vh;
     }
 
     h2 {
-        margin-bottom: 160px;
+        /* margin-bottom: 160px; */
+        font-size: 3vh;
     }
 
     #bt {
