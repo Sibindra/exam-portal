@@ -24,7 +24,7 @@
 require("emailConnection.php");
 
 // php mailer dependencies
-use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\PHPMailer;
 
     require 'vendor/autoload.php';
 
@@ -64,5 +64,3 @@ try {
 //  include ("emailVerification-components/verification.php");
 header('Location: emailVerification-components/verification.php ');
 exit;
-
-?>
