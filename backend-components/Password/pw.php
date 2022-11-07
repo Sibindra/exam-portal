@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,25 +8,26 @@
     <title>Update Password</title>
     <link rel="stylesheet" href="pw.css">
 </head>
+
 <body>
-    <?php
-       include ("../newPassword.php") 
-    ?>
+  
     <div class="container">
         <div class="container1">
             <h2>Please enter your new password</h2>
-             <div class="new">
-                <input type="text" name="" placeholder="" id="n">
-             </div>
-             <div class="confirm">
-                <input type="text" name="" placeholder="" id="con">
-             </div>
 
-             <div class="btn">
-                <button id="bt">Submit</button>
-             </div>
+                <div class="new">
+                    <input type="password" name="newPassword" placeholder="Enter your password" id="n">
+                </div>
+                <div class="confirm">
+                    <input type="password" name="confirmnewPassword" placeholder="Confirm password" id="con">
+                </div>
 
-        </div>
+                <div class="btn">
+                    <button id="bt" type="submit">Submit</button>
+                </div>
+                
+            </div>
     </div>
 </body>
+
 </html>

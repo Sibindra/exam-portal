@@ -1,32 +1,30 @@
 <?php
+// // php mailer dependencies
+// use PHPMailer\PHPMailer\PHPMailer;
+
+// // connection to localhost
+// $server = "localhost";
+// $username = "root";
+// $password = "";
+// $dB = "Exam-Portal";
+
+// $conn = mysqli_connect($server, $username, $password, $dB);
+
+// if (!$conn) {
+//     die("Connect failed:");
+// } else {
+
+//     $to_email=$_POST['email'];
+
+//     // generate 4 digit code
+//     // FIXME: mt_rand generaes new valie everytime it is called
+//     // $code = mt_rand(1111,9999);
+//     $code=1111;
+
+require("emailConnection.php");
+
 // php mailer dependencies
 use PHPMailer\PHPMailer\PHPMailer;
-
-// connection to localhost
-$server = "localhost";
-$username = "root";
-$password = "";
-$dB = "Exam-Portal";
-
-$conn = mysqli_connect($server, $username, $password, $dB);
-
-if (!$conn) {
-    die("Connect failed:");
-} else {
-
-    $to_email=$_POST['email'];
-
-    // generate 4 digit code
-    // FIXME: mt_rand generaes new valie everytime it is called
-    // $code = mt_rand(1111,9999);
-
-    function generateRandom(){
-        return mt_rand(1111,9999);
-    }
-
-    $code=generateRandom();
-    
-   
 
     require 'vendor/autoload.php';
 
@@ -57,13 +55,14 @@ try {
     $mail->send();
     echo 'Message has been sent';
 
-    header('Location: Password/pw.php');
+    header('Location: emailVerification-components/verification.php');
     exit;
 } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    // echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
     
-
-}
+//  include ("emailVerification-components/verification.php");
+header('Location: emailVerification-components/verification.php ');
+exit;
 
 ?>
