@@ -1,46 +1,46 @@
 <?php
 
-// include "emailConnection.php";
+include "emailConnection.php";
 
-// connection to localhost
-$server = "localhost";
-$username = "root";
-$password = "";
-$dB = "Exam-Portal";
+// // connection to localhost
 
-$conn = mysqli_connect($server, $username, $password, $dB);
+// $server = "localhost";
+// $username = "root";
+// $password = "";
+// $dB = "Exam-Portal";
 
-if (!$conn) {
-    die("Connect failed:");
-} else {
+// $connection = mysqli_connect($server, $username, $password, $dB);
+
+// if (!$conn) {
+//     die("Connect failed:");
+// } else {
     // echo "sucess";
 
 
-    
-    
-
-// FIXME:email address needs to be taken from emailConnection
-$emailAddress = "test@test.com";
-// echo $emailAddress;
-
-$newPassword = $_POST['newPassword'];
-// echo $newPassword;
 
 
-// query to update passowrd
-$passwordSql = ("UPDATE users SET Password = '$newPassword' WHERE users.Email = '$emailAddress'");
 
-// echo $passwordSql;
+    // FIXME:email address needs to be taken from emailConnection;
+    echo $to_email;
+    // echo $emailAddress;
 
-$result=$con->query($passwordSql);
-// execute query and update values to sql
-// if ($con->query($passwordSql)==TRUE){
-//         echo "changed pwd";
-    
-//     }else{
-//             echo "failed due to ".$con->error;
-//         }
-        
-//         // $con->close();
-        
-}
+    // $newPassword = $_POST['newPassword'];
+    // // echo $newPassword;
+
+
+    // // query to update passowrd
+    // $passwordSql = ("UPDATE users SET Password = '$newPassword' WHERE users.Email = '$to_email'");
+
+    // // echo $passwordSql;
+
+    // // execute query and update values to sql
+    // if ($conn->query($passwordSql) == TRUE) {
+    //     // echo "changed pwd";
+    //     echo '<script>alert("Password Changed")</script>';
+    //     header('Location: ../index.html');
+    //     exit;
+    // } else {
+    //     echo "failed due to " . $conn->error;
+    // }
+// }
+?>

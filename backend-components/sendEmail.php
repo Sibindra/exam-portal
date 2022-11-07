@@ -32,7 +32,6 @@ use PHPMailer\PHPMailer\PHPMailer;
 //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
 
-$to_email = $_POST['newEmail'];
 
 try {
     //Server settings
@@ -68,6 +67,6 @@ try {
 // header('Location: emailVerification-components/verification.php ');
 // exit;
 
-$conn->close();
+// $conn->close();
 
 ?>
