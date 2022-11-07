@@ -33,17 +33,31 @@
         </div>
 
         <div id="stddetails">
-            <span class="symbol">Symbol no: 201903</span>
-            <span class="name">Name: David Sparrow</span>
-            <span class="faculty">Faculty: Science and Technology</span>
-            <span class="year">Year: 2019</span>
-            <span class="noc">Name of college: Nepal College of Information and Technology</span>
-            <span class="university">University: Pokhara University</span>
-            <span class="regno">Reg no: 2019-12-56</span>
-            <span class="rollno">Roll no: 191786</span>
-            <span class="programme">Programme: Bachelors</span>
-            <span class="duepayment">Due Payment: Rs. 1,25,000</span>
-            <span class="passportsizephoto"></span>                
+            <div id="firsthalf">    
+                <span class="s">Symbol no: 201903</span>
+                <span class="s">Name: David Sparrow</span>
+                <span class="s">Faculty: Science and Technology</span>
+                <span class="s">Year: 2019</span>
+                <span class="s">Name of college: Nepal College of Information and Technology</span>
+                <span class="s">University: Pokhara University</span>
+            </div>    
+            <div class="secondhalf">
+                <div id="internaldiv">
+                    <span class="s">Reg no: 2019-12-56</span>
+                    <span class="s">Roll no: 191786</span>
+                    <span class="s">Programme: Bachelors</span>
+                    <span class="s"></span>                
+                </div>
+                
+                <div class="duepayment">
+                    <span class="s">Due Payment: Rs. 1,25,000</span>
+                </div>    
+                
+            </div>
+            
+            <div id="image">
+                <img src="photoFrame.png" alt="photoFrame">
+            </div>
         </div>
         
 
@@ -53,17 +67,17 @@
 
         <!-- Subject details -->
             <div id="subdetails">
-                <h2 id="regSub">Regular Subjects</h2>
+                <h2 class="subHead">Regular Subjects</h2>
 
-                <table id="subtable" border="1">
+                <table class="subtable" border="1">
                     <tr id="tablehead">
-                        <th>SN</th>
-                        <th>Subject</th>
-                        <th>Subject Code</th>
-                        <th>Credit Hrs</th>
-                        <th>Barrier Status</th>
-                        <th>Barrier Subject</th>
-                        <th>Barrier Semester</th>
+                        <th class="head">SN</th>
+                        <th class="head">Subject</th>
+                        <th class="head">Subject Code</th>
+                        <th class="head">Credit Hrs</th>
+                        <th class="head">Barrier Status</th>
+                        <th class="head">Barrier Subject</th>
+                        <th class="head">Barrier Semester</th>
                     </tr>
 
                     <tr>
@@ -71,7 +85,7 @@
                         <td>Enigeering Mathematics II</td>
                         <td>1213</td>
                         <td>3 hrs</td>
-                        <td>Barrier</td>
+                        <td class="barrier">Barrier</td>
                         <td>Engineering Mathematics IV</td>
                         <td>4th</td>
                     </tr>
@@ -81,7 +95,7 @@
                         <td>Mathematical Foundation in Computer Science</td>
                         <td>1114</td>
                         <td>2 hrs</td>
-                        <td>Not Barrier</td>
+                        <td class="notbarrier">Not Barrier</td>
                         <td>-</td>
                         <td>-</td>
                     </tr>
@@ -91,7 +105,7 @@
                         <td>Physics</td>
                         <td>5498</td>
                         <td>3 hrs</td>
-                        <td>Not Barrier</td>
+                        <td class="notbarrier">Not Barrier</td>
                         <td>-</td>
                         <td>-</td>
                     </tr>
@@ -101,7 +115,7 @@
                         <td>Object Oriented Programming in C++</td>
                         <td>2014</td>
                         <td>4 hrs</td>
-                        <td>Not Barrier</td>
+                        <td class="notbarrier">Not Barrier</td>
                         <td>-</td>
                         <td>-</td>
                     </tr>
@@ -111,17 +125,17 @@
 
         <!-- Back Subject details -->
         <div id="backsubdetails">
-            <h2>Back Subjects</h2>
+            <h2 class="subHead">Back Subjects</h2>
 
-            <table id="subtable" border="1">
+            <table class="subtable" border="1">
                 <tr id="tablehead">
-                    <th>SN</th>
-                    <th>Subject</th>
-                    <th>Subject Code</th>
-                    <th>Credit Hrs</th>
-                    <th>Barrier Status</th>
-                    <th>Barrier Subject</th>
-                    <th>Barrier Semester</th>
+                    <th class="head">SN</th>
+                    <th class="head">Subject</th>
+                    <th class="head">Subject Code</th>
+                    <th class="head">Credit Hrs</th>
+                    <th class="head">Barrier Status</th>
+                    <th class="head">Barrier Subject</th>
+                    <th class="head">Barrier Semester</th>
                 </tr>
 
                 <tr>
@@ -129,7 +143,7 @@
                     <td>Enigeering Mathematics II</td>
                     <td>1213</td>
                     <td>3 hrs</td>
-                    <td>Barrier</td>
+                    <td class="barrier">Barrier</td>
                     <td>Engineering Mathematics IV</td>
                     <td>4th</td>
                 </tr>
@@ -139,7 +153,7 @@
                     <td>Mathematical Foundation in Computer Science</td>
                     <td>1114</td>
                     <td>2 hrs</td>
-                    <td>Not Barrier</td>
+                    <td class="notbarrier">Not Barrier</td>
                     <td>-</td>
                     <td>-</td>
                 </tr>
@@ -149,7 +163,7 @@
                     <td>Physics</td>
                     <td>5498</td>
                     <td>3 hrs</td>
-                    <td>Not Barrier</td>
+                    <td class="notbarrier">Not Barrier</td>
                     <td>-</td>
                     <td>-</td>
                 </tr>
@@ -159,7 +173,7 @@
                     <td>Object Oriented Programming in C++</td>
                     <td>2014</td>
                     <td>4 hrs</td>
-                    <td>Not Barrier</td>
+                    <td class="notbarrier">Not Barrier</td>
                     <td>-</td>
                     <td>-</td>
                 </tr>
@@ -168,12 +182,8 @@
 
         <!-- footer -->
         <div id="footer">
-            All Rights Reserved to the Team 
+            All Rights Reserved to the Team ⓒ
         </div>
-
-
-
-
 
     </div>
 </body>
