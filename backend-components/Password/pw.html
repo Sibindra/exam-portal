@@ -10,18 +10,16 @@
 </head>
 
 <body>
+    <form action="../newPassword.php" method="POST" id="form">
 
     <div class="container">
-        <form action="../newPassword.php" method="POST">
 
             <div class="container1">
-                <h2>Please enter your new password</h2>
+                <h2 id="title">Please enter your new password</h2>
 
                 <div class="new">
-                    <input type="password" name="newPassword" placeholder="Enter your password" id="n">
-                </div>
-                <div class="confirm">
-                    <input type="password" name="confirmnewPassword" placeholder="Confirm password" id="con">
+                    <input type="password" name="newPassword" placeholder="Enter your password" id="p1" class="box">
+                    <!-- <input type="password" name="confirmnewPassword" placeholder="Confirm password" id="p2" class="box"> -->
                 </div>
 
                 <div class="btn">
@@ -29,8 +27,10 @@
                 </div>
 
             </div>
-        </form>
-    </div>
+        </div>
+
+        <script src="pw.js"></script>
+    </form>
 </body>
 
 </html>

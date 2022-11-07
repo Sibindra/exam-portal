@@ -1,7 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    font-family: Poppins,system-ui;
+}
+
 .container{
-    height: 98vh;
-    margin: none;
-    background-color: rgba(151, 151, 151, 0.781);
+    background: url(bak.png);
+    background-size: cover;
+    background-color: #D9D9D9;
+    width: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,27 +21,58 @@
 }
 
 .container1{
-    height: 500px;
-    width: 800px;
+    width: 80%;
+    height: 70%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     background-color: white;
     border-radius: 6px;
     
 }
 
-.new,.confirm{
-    margin: 20px 0px 20px 0px;
-    
-     
+
+#title{
+    color: #0b0e90;
+    font-weight: bold;
+    font-size: 2vmax;
 }
 
-input[type='text'] { 
-    font-size: 38px; 
-    
-    
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title{
+    text-align: center;
+}
+
+.box{ 
+    margin: 1vmax;
+    font-size: 1vmax;
+    border: 1px solid #dfdfdf;
+    padding: 3vh;
+    background-color: #f3f8ff;
+    color: #212121;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid #d6d6d6;
+
+    width: 90%;
+    height: 10%;
+}
+
+.box:focus{
+    outline: none !important;
+    border: 3px solid #1573fe;
 }
 
 
@@ -42,38 +85,39 @@ h2{
 
 
 #bt{
-    cursor: pointer;
-    height: 40px;
-    width: 300px;
-    background-color: rgb(39, 39, 163);
-    font-size: 1.2rem;
+    width: 10vw;
+    font-size: 17px;
+
     color: white;
-    font-family:monospace;
-    border-radius: 8px;
-    box-shadow: 30px 30px 60px grey;
+    font-weight: 500;
+
+    background-color: #0b0e90;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    padding: 1vmax;
 }
 
 
 @media  screen and (max-width:600px) {
     .container1{
         height: 100vh;
-    }
-
-    input[type='text']{
-        font-size: 27px;
-    }
-
-    h2{
-        margin-bottom: 150px;
+        width: 100vh;
     }
 
     #bt{
-        width:200px;
-        margin-top: 30px;
+        width: 40%;
+        height: inherit ;
     }
 
+    .box{
+        font-size: 2vh;
+    }
 
-
-
-    
+    #title{
+        font-size: 4vmax;
+    }
 }
