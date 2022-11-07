@@ -15,7 +15,7 @@
 
     if($enteredCode==$code){
         echo "match";
-        header('Location: Password/pw.php');
+        header('Location: Password/pw.html');
         exit;
     }else{
         // TODO:

@@ -22,14 +22,17 @@
 //     $code=1111;
 
 require("emailConnection.php");
+require 'vendor/autoload.php';
+
 
 // php mailer dependencies
-    use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\PHPMailer;
 
-    require 'vendor/autoload.php';
 
 //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
+
+$to_email = $_POST['newEmail'];
 
 try {
     //Server settings
@@ -43,7 +46,7 @@ try {
 
     //Recipients
     $mail->setFrom('examportalnepal@gmail.com', 'Exam-Portal');
-    $mail->addAddress($to_email);            
+    $mail->addAddress($to_email);
 
 
     //Content
@@ -64,3 +67,7 @@ try {
 //  include ("emailVerification-components/verification.php");
 // header('Location: emailVerification-components/verification.php ');
 // exit;
+
+$conn->close();
+
+?>

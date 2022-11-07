@@ -17,5 +17,7 @@ if (!$con) {
 
 // login verification
 include "./loginVerification.php";
+
+$con->close();
     
 ?>

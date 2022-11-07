@@ -17,7 +17,7 @@
                 </div>
 
                 <div class="new">
-                    <input type="email" name="email" placeholder="Please enter your email" id="n">
+                    <input type="email" name="newEmail" placeholder="Please enter your email" id="n">
                 </div>
                 
                 <div class="btn">
