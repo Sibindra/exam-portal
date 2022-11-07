@@ -12,6 +12,8 @@ if (!$conn) {
 } else {
 
 }
+
+
     $to_email=$_POST['email'];
 
     // generate 4 digit code

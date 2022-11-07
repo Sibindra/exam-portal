@@ -10,10 +10,12 @@
 </head>
 
 <body>
-  
+
     <div class="container">
-        <div class="container1">
-            <h2>Please enter your new password</h2>
+        <form action="../newPassword.php" method="POST">
+
+            <div class="container1">
+                <h2>Please enter your new password</h2>
 
                 <div class="new">
                     <input type="password" name="newPassword" placeholder="Enter your password" id="n">
@@ -25,8 +27,9 @@
                 <div class="btn">
                     <button id="bt" type="submit">Submit</button>
                 </div>
-                
+
             </div>
+        </form>
     </div>
 </body>
 

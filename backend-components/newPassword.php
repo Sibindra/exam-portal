@@ -1,13 +1,20 @@
 <?php
-    require "sendEmail.php";
 
-    // echo $code;
+    include ("emailConnection.php");
 
-    $new_password=$_POST['newPassword'];
-
-    echo ($to_email);
-    echo($new_password);
+    echo $to_email;
+    // echo "works";
 
 
+    $newPassword=$_POST['newPassword'];
 
+    // echo $newPassword;
+
+    // query to take password
+    $getPassword=("SELECT Password FROM users WHERE email='$to_email'");
+
+    echo $getPassword;
+
+    // query to replace password
+    // $sql = ("SELECT * FROM users WHERE email='$email' AND password='$password'");
 ?>
