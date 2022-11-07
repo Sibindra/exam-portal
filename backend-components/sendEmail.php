@@ -62,5 +62,5 @@ try {
 }
     
 //  include ("emailVerification-components/verification.php");
-header('Location: emailVerification-components/verification.php ');
-exit;
+// header('Location: emailVerification-components/verification.php ');
+// exit;

@@ -16,6 +16,8 @@ if (!$conn) {
 
     $to_email=$_POST['email'];
 
+    // echo $to_email;
+
     // generate 4 digit code
     // FIXME: mt_rand generaes new valie everytime it is called
     // $code = mt_rand(1111,9999);
