@@ -22,6 +22,10 @@
     padding: 50px;
 }
 
+.user{
+    display: none;
+}
+
 /* buttons */
 #wave{
     animation: wiggle 1s infinite;
@@ -120,6 +124,7 @@
 /* Table headings */
 .subHead{
     Color: #0B0E90;
+    
 }
 
 
@@ -144,5 +149,102 @@ tr{
     color: #2AD000;
     border-radius: 50px;
     background-color:#F1FFE5;
+}
+
+/* Footer Button  */
+
+#btn{
+    display: none;
+}
+
+
+/* Responsive */
+
+@media  screen and (max-width:600px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+    #welcome{
+        font-size: 1.0 rem;
+    }
+
+
+
+    #footer h2,#buttons,.intro,#welcome{
+       display:none;
+
+    }
+
+    #btn{
+        display: block;
+    }
+
+    #firsthalf,.secondhalf{
+    
+        font-size: 0.6rem;
+        margin-bottom: 140px;
+    
+
+    }
+
+    img{
+        height: 80px;
+        width: 80px;
+        margin-left: 10px; 
+    }
+
+    #stddetails{
+        width: 100%;
+        height: 40%;
+        margin-left: 0px;
+    
+        
+        
+    }
+
+    .user{
+        display: block;
+        margin: auto;
+    }
+
+    /* Table Display  */
+
+    table tr>th:nth-of-type(3),   table tr>td:nth-of-type(3){
+        display: none;
+    }
+    table tr>th:nth-of-type(4),   table tr>td:nth-of-type(4){
+        display: none;
+    }
+    table tr>th:nth-of-type(5),   table tr>td:nth-of-type(5){
+        display: none;
+    }
+    table tr>th:nth-of-type(6),   table tr>td:nth-of-type(6){
+        display: none;
+    }
+    table tr>th:nth-of-type(7),   table tr>td:nth-of-type(7){
+        display: none;
+    }
+
+    #backsubdetails,#subdetails{
+        display: flex;
+        align-items: center;   
+    }
+
+    #footer{
+        width: 100%;
+    }
+
+    .subtable{
+        border: 1px solid rgba(228, 213, 213, 0.5);
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        width: 100%;
+        margin-right:40px;
+        
+    }
+    
 }
 
