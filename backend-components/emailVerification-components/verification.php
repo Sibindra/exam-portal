@@ -10,8 +10,6 @@
 
     </head>
     <body>
-
-   
         <form action="../codeVerification.php" method="POST">
         <div id="hero">
             <div id="container">
