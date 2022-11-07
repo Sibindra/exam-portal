@@ -36,21 +36,22 @@ try {
 
     //Recipients
     $mail->setFrom('examportalnepal@gmail.com', 'Exam-Portal');
-    $mail->addAddress($to_mail);               //Name is optional
+    $mail->addAddress($to_email);            
 
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = 'exam portal verification code';
-    $mail->Body    = "Your verification code is:'$code' ";
+    $mail->Body    = "Your verification code is: '$code'";
 
     $mail->send();
     echo 'Message has been sent';
 
-    header('Location: ../Password/pw.php');
+    header('Location: Password/pw.php');
+    echo $code;
     exit;
 } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    // echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
     
 

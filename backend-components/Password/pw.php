@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="pw.css">
 </head>
 <body>
+    <?php
+       include ("../newPassword.php") 
+    ?>
     <div class="container">
         <div class="container1">
             <h2>Please enter your new password</h2>
