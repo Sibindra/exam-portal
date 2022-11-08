@@ -1,10 +1,21 @@
 <?php
 
-require "./emailConnection.php";
+// require "./sendEmail.php";
+require "emailConnection.php";
+
+$emailAddress=$_GET['to_email'];
+
+echo $emailAddress;
+
 // session_start();
 
-echo $dB;
-echo $to_email;
+// echo $dB;
+// echo $to_email;
+// echo $_SESSION['emailAddress'];
+
+// echo session_name();
+
+// echo $abcd;
 // echo $_SESSION['to_email'];
 
 // session_start();
@@ -55,5 +66,5 @@ echo $to_email;
 // } else {
 //     echo "failed due to " . $conn->error;
 // }
-// //  }
+//  }
 ?>

@@ -21,6 +21,10 @@
 //     // $code = mt_rand(1111,9999);
 //     $code=1111;
 
+// session_start();
+
+
+
 require("emailConnection.php");
 
 // session_start();
@@ -44,7 +48,7 @@ try {
     $mail->Password   = 'lysdugovoqhgolqg';                               //SMTP password
     $mail->SMTPSecure = "tls";            //Enable implicit TLS encryption
     $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
-
+    
     //Recipients
     $mail->setFrom('examportalnepal@gmail.com', 'Exam-Portal');
     $mail->addAddress($to_email);
@@ -55,18 +59,23 @@ try {
     $mail->Subject = 'exam portal verification code';
     $mail->Body    = "Your verification code is:'$code'";
     // echo $code;
-
+    
     $mail->send();
-    echo 'Message has been sent';
-
-    echo $to_email; 
-
-    // header('Location: emailVerification-components/verification.php');
+    // echo 'Message has been sent';
+    
+    // echo $to_email; 
+    // echo session_name();
+    
+    header('Location: emailVerification-components/verification.php');
     exit;
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
-    
+
+// $_SESSION['emailAddress']="works";
+// echo $_SESSION['emailAddess'];
+
+// echo $to_email;
 //  include ("emailVerification-components/verification.php");
 // header('Location: emailVerification-components/verification.php ');
 // exit;

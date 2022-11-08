@@ -19,6 +19,7 @@ if (!$conn) {
     $to_email = $_POST['newEmail'];
     // $to_email="test@test.com";
 
+    // $_SESSION['emailAddress']=$to_email;
     // echo $to_email;
 }
     // echo $to_email;
