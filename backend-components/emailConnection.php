@@ -1,4 +1,7 @@
 <?php
+// session start
+// session_start();
+
 // connection to localhost
 $server = "localhost";
 $username = "root";
@@ -11,8 +14,11 @@ if (!$conn) {
     die("Connect failed:");
 } else {
     // echo "sucess";
+    // FIXME: code to geneate random no 
     $code=1111;
     $to_email = $_POST['newEmail'];
+    // $to_email="test@test.com";
+
     // echo $to_email;
 }
     // echo $to_email;

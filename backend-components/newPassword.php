@@ -1,6 +1,13 @@
 <?php
 
-include "emailConnection.php";
+require "./emailConnection.php";
+// session_start();
+
+echo $dB;
+echo $to_email;
+// echo $_SESSION['to_email'];
+
+// session_start();
 
 // // connection to localhost
 
@@ -14,34 +21,39 @@ include "emailConnection.php";
 // if (!$conn) {
 //     die("Connect failed:");
 // } else {
-    // echo "sucess";
+// echo "sucess";
 
 
 
 
 
-    // FIXME:email address needs to be taken from emailConnection;
-    $to_email="test@test.com";
-    echo $to_email;
+// FIXME:email address needs to be taken from emailConnection;
+// echo $to_email;
 
-    // echo $emailAddress;
+// $to_email="test@test.com";
 
-    $newPassword = $_POST['newPassword'];
-    // echo $newPassword;
+// $emailAddress=$to_email;
+
+// // echo $to_email;
+// // echo $emailAddress;
+
+// $newPassword = $_POST['newPassword'];
+// // echo $newPassword;
 
 
-    // query to update passowrd
-    $passwordSql = ("UPDATE users SET Password = '$newPassword' WHERE users.Email = '$to_email'");
+// // query to update passowrd
+// $passwordSql = ("UPDATE users SET Password = '$newPassword' WHERE users.Email = '$emailAddress'");
 
-    // echo $passwordSql;
+// // echo $passwordSql;
 
-    // execute query and update values to sql
-    if ($conn->query($passwordSql) == TRUE) {
-        // echo "changed pwd";
-        echo '<script>alert("Password Changed")</script>';
-        header('Location: ../index.html');
-        exit;
-    } else {
-        echo "failed due to " . $conn->error;
-    }
+// // execute query and update values to sql
+// if ($conn->query($passwordSql) == TRUE) {
+//     // echo "changed pwd";
+//     echo '<script>alert("Password Changed")</script>';
+//     header('Location: ../index.html');
+//     exit;
+// } else {
+//     echo "failed due to " . $conn->error;
+// }
+// //  }
 ?>

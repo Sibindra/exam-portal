@@ -14,7 +14,7 @@
 //     die("Connect failed:");
 // } else {
 
-//     $to_email=$_POST['email'];
+//     $$to_email=$_POST['email'];
 
 //     // generate 4 digit code
 //     // FIXME: mt_rand generaes new valie everytime it is called
@@ -22,6 +22,8 @@
 //     $code=1111;
 
 require("emailConnection.php");
+
+// session_start();
 require 'vendor/autoload.php';
 
 
@@ -57,10 +59,12 @@ try {
     $mail->send();
     echo 'Message has been sent';
 
-    header('Location: emailVerification-components/verification.php');
+    echo $to_email; 
+
+    // header('Location: emailVerification-components/verification.php');
     exit;
 } catch (Exception $e) {
-    // echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
     
 //  include ("emailVerification-components/verification.php");
