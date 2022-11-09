@@ -16,6 +16,7 @@ if (!$conn) {
     // echo "sucess";
     // FIXME: code to geneate random no 
     $code=1111;
+    
     $to_email = $_POST['newEmail'];
     // $to_email="test@test.com";
 

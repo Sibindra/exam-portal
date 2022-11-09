@@ -64,15 +64,15 @@ try {
     // echo $code;
     
     // FIXME:enable this
-    // $mail->send();
+    $mail->send();
 
     // echo 'Message has been sent';
     
     // echo $to_email; 
     // echo session_name();
     
-    // header('Location: emailVerification-components/verification.php?requestedEmail='.$to_email);
-    // exit;
+    header('Location: emailVerification-components/verification.php?requestedEmail='.$to_email);
+    exit;
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
