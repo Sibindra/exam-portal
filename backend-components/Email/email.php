@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="email.css">
 </head>
 <body>
+
     <form action="../sendEmail.php" method="post">
     <div class="hero">
         <div class="container">
