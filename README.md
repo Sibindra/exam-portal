@@ -124,7 +124,7 @@ If you go to your repository on GitHub, click  `Compare & pull request`button th
 - then go to db Exam-Portal and paste the following instructions on SQL section
     
     ```sql
-    CREATE TABLE `Exam-Portal`.`users` (`id` INT NOT NULL AUTO_INCREMENT , `Email` VARCHAR(255) NOT NULL , `Password` VARCHAR(255) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+    CREATE TABLE `Exam-Portal`.`users` (`symbolNo` INT NOT NULL , `Email` VARCHAR(255) NOT NULL , `Password` VARCHAR(255) NOT NULL , PRIMARY KEY    (`symbolNo`)) ENGINE = InnoDB;
     ```
     
 - create a database as follows
