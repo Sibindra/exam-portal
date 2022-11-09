@@ -1,6 +1,6 @@
 <?php
 // session start
-// session_start();
+session_start();
 
 // connection to localhost
 $server = "localhost";
@@ -19,7 +19,7 @@ if (!$conn) {
     $to_email = $_POST['newEmail'];
     // $to_email="test@test.com";
 
-    // $_SESSION['emailAddress']=$to_email;
+    $_SESSION['emailAddress']=$dB;
     // echo $to_email;
 }
     // echo $to_email;

@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <form action="../newPassword.php" method="POST" id="form">
+    <form action="../newPassword.php?requestedEmail=test@test.com" method="POST" id="form">
 
     <div class="container">
 

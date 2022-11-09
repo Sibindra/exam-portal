@@ -3,8 +3,12 @@
 // require "./sendEmail.php";
 require "emailConnection.php";
 
-$emailAddress=$_GET['to_email'];
+// $emailAddress=$_GET['to_email'];
 
+// echo $emailAddress;
+
+// echo $to_email;
+$emailAddress=$_GET['requestedEmail'];
 echo $emailAddress;
 
 // session_start();
@@ -48,23 +52,23 @@ echo $emailAddress;
 // // echo $to_email;
 // // echo $emailAddress;
 
-// $newPassword = $_POST['newPassword'];
-// // echo $newPassword;
+$newPassword = $_POST['newPassword'];
+// echo $newPassword;
 
 
-// // query to update passowrd
-// $passwordSql = ("UPDATE users SET Password = '$newPassword' WHERE users.Email = '$emailAddress'");
+// query to update passowrd
+$passwordSql = ("UPDATE users SET Password = '$newPassword' WHERE users.Email = '$emailAddress'");
 
-// // echo $passwordSql;
+// echo $passwordSql;
 
-// // execute query and update values to sql
-// if ($conn->query($passwordSql) == TRUE) {
-//     // echo "changed pwd";
-//     echo '<script>alert("Password Changed")</script>';
-//     header('Location: ../index.html');
-//     exit;
-// } else {
-//     echo "failed due to " . $conn->error;
-// }
+// execute query and update values to sql
+if ($conn->query($passwordSql) == TRUE) {
+    // echo "changed pwd";
+    echo '<script>alert("Password Changed")</script>';
+    header('Location: ../index.html');
+    exit;
+} else {
+    echo "failed due to " . $conn->error;
+}
 //  }
 ?>

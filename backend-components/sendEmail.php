@@ -39,6 +39,9 @@ use PHPMailer\PHPMailer\PHPMailer;
 $mail = new PHPMailer(true);
 
 
+echo $to_email;
+
+
 try {
     //Server settings
     $mail->isSMTP();                                            //Send using SMTP
@@ -60,21 +63,24 @@ try {
     $mail->Body    = "Your verification code is:'$code'";
     // echo $code;
     
-    $mail->send();
+    // FIXME:enable this
+    // $mail->send();
+
     // echo 'Message has been sent';
     
     // echo $to_email; 
     // echo session_name();
     
-    header('Location: emailVerification-components/verification.php');
-    exit;
+    // header('Location: emailVerification-components/verification.php?requestedEmail='.$to_email);
+    // exit;
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
 
 // $_SESSION['emailAddress']="works";
-// echo $_SESSION['emailAddess'];
 
+// echo $_SESSION['emailAddess'];
+// echo $dB;
 // echo $to_email;
 //  include ("emailVerification-components/verification.php");
 // header('Location: emailVerification-components/verification.php ');
