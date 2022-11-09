@@ -193,13 +193,16 @@ tr{
     img{
         height: 80px;
         width: 80px;
-        margin-left: 10px; 
+        margin-left: 10px;
+        
     }
 
     #stddetails{
         width: 100%;
-        height: 40%;
+        height: 28%;
         margin-left: 0px;
+        padding-top: 10px;
+        padding-left: 10px;
     
         
         
@@ -245,6 +248,12 @@ tr{
         margin-right:40px;
         
     }
+
+    #firsthalf{
+        height: 280px;
+        margin-left: 0px;
+    }
+
     
 }
 
