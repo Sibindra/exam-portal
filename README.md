@@ -138,3 +138,7 @@ If you go to your repository on GitHub, click  `Compare & pull request`button th
     ```sql
     CREATE TABLE `Exam-Portal`.`users` (`id` INT NOT NULL AUTO_INCREMENT , `Email` VARCHAR(255) NOT NULL , `Password` VARCHAR(255) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
     ``` -->
+ - go to sql and add folloeing 
+ ```sql
+ INSERT INTO `users` (`symbolNo`, `Email`, `Password`) VALUES ('191727', 'timalsinasibindra@gmail.com', 'test-123');
+ ```
