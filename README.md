@@ -127,7 +127,7 @@ If you go to your repository on GitHub, click  `Compare & pull request`button th
     CREATE TABLE `Exam-Portal`.`users` (`symbolNo` INT NOT NULL , `Email` VARCHAR(255) NOT NULL , `Password` VARCHAR(255) NOT NULL , PRIMARY KEY    (`symbolNo`)) ENGINE = InnoDB;
     ```
     
-- create a database as follows
+<!-- - create a database as follows
     
     ```sql
     CREATE DATABASE Exam-Portal;
@@ -137,4 +137,4 @@ If you go to your repository on GitHub, click  `Compare & pull request`button th
     
     ```sql
     CREATE TABLE `Exam-Portal`.`users` (`id` INT NOT NULL AUTO_INCREMENT , `Email` VARCHAR(255) NOT NULL , `Password` VARCHAR(255) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
-    ```
+    ``` -->
