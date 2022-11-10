@@ -17,17 +17,25 @@
 
     
     // echo $num;
+
     
     // MATCH IN DATABASE
     if ($num > 0) {
         // code for match found
-        // echo "MATCH FOUND";
-        header('Location: ../dashboard-components/dashboard.html');
+        $id=("SELECT symbolNo FROM users where Email=".$email);
+        // $res=mysqli_query($con,$id);
+
+        // $res=$con->query($id);
+        // echo $res;
+        
+        // echo $id;
+        echo "MATCH FOUND";
+        header('Location: ../dashboard-components/dashboard.php?id='.base64_encode($id));
         exit;
     } else {
         // code for match not found
-        // echo "NO MATCH";
-        header('Location: ../index.html');
-        exit;
+        echo "NO MATCH";
+        // header('Location: ../index.html');
+        // exit;
     }
 ?>

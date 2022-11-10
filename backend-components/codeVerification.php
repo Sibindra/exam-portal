@@ -1,5 +1,5 @@
 <?php
-    // require ("emailConnection.php");
+    require ("emailConnection.php");
 
 //     $server = "localhost";
 // $username = "root";
@@ -13,7 +13,8 @@
 // } else {
 // }
 
-$code=1111;
+// $code=1111;
+ echo $code;
 $to_email=base64_decode($_GET['requestedEmail']);
     // echo $to_email;
 
