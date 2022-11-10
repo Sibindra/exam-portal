@@ -34,24 +34,23 @@
 
         <div id="stddetails">
             <div id="firsthalf">
-                <span class="s">Symbol no: 201903</span>
-                <span class="s">Name: David Sparrow</span>
-                <span class="s">Faculty: Science and Technology</span>
-                <span class="s">Year: 2019</span>
-                <span class="s">Name of college: Nepal College of Information and
-                    Technology</span>
-                <span class="s">University: Pokhara University</span>
+                <span class="s">Symbol No: <?php echo $symbolNo?></span>
+                <span class="s">Name: <?php echo $name?></span>
+                <span class="s">Faculty: <?php echo $faculty?></span>
+                <span class="s">Year: <?php echo $year?></span>
+                <span class="s">Name of college: <?php echo $collegeName?></span>
+                <span class="s">University: <?php echo $uni?></span>
             </div>
             <div class="secondhalf">
                 <div id="internaldiv">
-                    <span class="s">Reg no: 2019-12-56</span>
-                    <span class="s">Roll no: 191786</span>
-                    <span class="s">Programme: Bachelors</span>
-                    <span class="s"></span>
+                    <span class="s">Reg no: <?php echo $regNo?></span>
+                    <span class="s">Roll no: <?php echo $rollNo?></span>
+                    <span class="s">Programme: <?php echo $programme?></span>
+                    <!-- <span class="s"></span> -->
                 </div>
 
                 <div class="duepayment">
-                    <span class="s">Due Payment: Rs. 1,25,000</span>
+                    <span class="s">Due Payment: <?php echo $duePayment?></span>
                 </div>
             </div>
 

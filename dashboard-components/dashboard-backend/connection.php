@@ -58,7 +58,7 @@
                 $year=$rows["Year"];
                 $collegeName=$rows["NameofCollege"];
                 $uni=$rows["University"];
-                $regNo=$rows["Rollno"];
+                $regNo=$rows["Regno"];
                 $programme=$rows["Programme"];
                 $duePayment=$rows["Due"];
                 // $img=$rows["img_dir"];
