@@ -1,5 +1,4 @@
 <?php
-
     //  connection to localhost
     $server = "localhost";
     $username = "root";
@@ -15,17 +14,31 @@
     
     else{
         // echo "Sucess";
+        // echo $dB;
     }
-        
         // SELECT symbolNO FROM users where Email=".$email
-        $sql=base64_decode($_GET['id']);
+        // $sql=base64_decode($_GET['id']);
+        
+        // echo $sql;
+        // $sql="SELECT * FROM users WHERE Email='timalsinasibindra@gmail.com'";
+
+        $email=base64_decode($_GET['email']);
+
+        // echo $email;
+
+        $sql="SELECT symbolNo FROM users WHERE Email=".$email;
+        // echo $sql;
+
         // echo $sql;
         
-        
-        // $sql=("SELECT symbolNo FROM users WHERE Email='timalsinasibindra@gmail.com'");
-        
-        
-        $result=mysqli_query($con,$sql);
-        
-        echo $result;
+        $result=$con->query($sql);
+
+        if($result->num_rows>0){
+            while($row = $result->fetch_assoc()){
+                echo "Symbol No: " .$row["symbolNo"];
+            }
+        }else{
+            echo "NO SUCH EMAIL";
+        }
+
 ?>
