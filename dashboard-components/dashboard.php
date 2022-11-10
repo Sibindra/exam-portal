@@ -175,7 +175,7 @@
 
         <!-- footer -->
         <div id="footer">
-            <h2 class="footertext">All Rights Reserved to the Team ⓒ</h2>
+            <h2 class="footertext">Thank You</h2>
             <div id="btn">
                 <button id="export" class="button">Export</button>
                 <button id="fillform" class="button">Fill Form</button>

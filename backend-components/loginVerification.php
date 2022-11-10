@@ -35,8 +35,10 @@
         exit;
     } else {
         // code for match not found
-        echo "NO MATCH";
-        // header('Location: ../index.html');
-        // exit;
+        // echo "NO MATCH";
+
+        echo "<script>alert('Invalid')</script>";
+        header('Location: ../index.html');
+        exit;
     }
 ?>
