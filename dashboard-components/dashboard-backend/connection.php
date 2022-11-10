@@ -61,6 +61,8 @@
                 $regNo=$rows["Regno"];
                 $programme=$rows["Programme"];
                 $duePayment=$rows["Due"];
+
+                $img=$rows["img_dir"];
                 // $img=$rows["img_dir"];
             }
         }

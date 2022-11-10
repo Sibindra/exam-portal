@@ -55,7 +55,7 @@
             </div>
 
             <div id="image">
-                <img src="photoFrame.png" alt="photoFrame" />
+                <img src="<?php echo $img?>" alt="photoFrame" />
             </div>
         </div>
 
