@@ -34,14 +34,14 @@ function sendMail()
         $mail->Body    = "Your verification code is:'$code'";
 
         // FIXME:enable this
-        $mail->send();
+        // $mail->send();
 
         // echo $mailNo;
         header('Location: emailVerification-components/verification.php?requestedEmail='.$to_email);
         exit;
 
     } catch (Exception $e) {
-        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        // echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
 }
 
