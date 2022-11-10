@@ -20,13 +20,13 @@
         // $sql=base64_decode($_GET['id']);
         
         // echo $sql;
-        // $sql="SELECT * FROM users WHERE Email='timalsinasibindra@gmail.com'";
-
+        
         $email=base64_decode($_GET['email']);
-
+        
         // echo $email;
-
-        $sql="SELECT symbolNo FROM users WHERE Email=".$email;
+        
+        // $sql="SELECT * FROM users WHERE Email='timalsinasibindra@gmail.com'";
+        $sql="SELECT * FROM users WHERE Email='$email'";
         // echo $sql;
 
         // echo $sql;
