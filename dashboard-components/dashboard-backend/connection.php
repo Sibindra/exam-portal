@@ -43,9 +43,6 @@
 
         // echo $rollNo;
 
-
-
-
         // fetching values
         $query="SELECT * FROM `Student Details` where Rollno='$rollNo'";
 
@@ -55,7 +52,16 @@
 
         if($ans->num_rows>0){
             while($rows=$ans->fetch_assoc()){
-                echo $rows["Name"];
+                $symbolNo=$rows["Symbolno"];
+                $name=$rows["Name"];
+                $faculty=$rows["Faculty"];
+                $year=$rows["Year"];
+                $collegeName=$rows["NameofCollege"];
+                $uni=$rows["University"];
+                $regNo=$rows["Rollno"];
+                $programme=$rows["Programme"];
+                $duePayment=$rows["Due"];
+                // $img=$rows["img_dir"];
             }
         }
 
@@ -63,6 +69,5 @@
             echo "NO MATCH";
         }
 
-        // $symbolNo
-
+        // echo $duePayment;
 ?>
