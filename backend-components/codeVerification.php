@@ -1,5 +1,21 @@
 <?php
-    require ("emailConnection.php");
+    // require ("emailConnection.php");
+
+//     $server = "localhost";
+// $username = "root";
+// $password = "";
+// $dB = "Exam-Portal";
+
+// $conn = mysqli_connect($server, $username, $password, $dB);
+
+// if (!$conn) {
+//     die("Connect failed:");
+// } else {
+// }
+
+$code=1111;
+$to_email=base64_decode($_GET['requestedEmail']);
+    // echo $to_email;
 
     // echo $dB;
 
@@ -15,7 +31,8 @@
 
     if($enteredCode==$code){
         echo "match";
-        header('Location: Password/pw.php??requestedEmail=test@test.com');
+        // echo $to_email;
+        header("Location: Password/pw.php?requestedEmail=".base64_encode($to_email));
         exit;
     }else{
         // TODO:
