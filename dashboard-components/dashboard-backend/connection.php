@@ -35,10 +35,34 @@
 
         if($result->num_rows>0){
             while($row = $result->fetch_assoc()){
-                echo "Symbol No: " .$row["symbolNo"];
+                $rollNo=$row["symbolNo"];
             }
         }else{
             echo "NO SUCH EMAIL";
         }
+
+        // echo $rollNo;
+
+
+
+
+        // fetching values
+        $query="SELECT * FROM `Student Details` where Rollno='$rollNo'";
+
+        // echo $query;
+
+        $ans=$con->query($query);
+
+        if($ans->num_rows>0){
+            while($rows=$ans->fetch_assoc()){
+                echo $rows["Name"];
+            }
+        }
+
+        else{
+            echo "NO MATCH";
+        }
+
+        // $symbolNo
 
 ?>
