@@ -10,7 +10,15 @@
 </head>
 
 <body>
-    <form action="../newPassword.php?requestedEmail=test@test.com" method="POST" id="form">
+
+<?php
+    // echo "works";
+
+    $email1=base64_decode($_GET['requestedEmail']);
+    // echo $to_email;
+    $link="../newPassword.php?requestedEmail=".base64_encode($email1);
+?>
+    <form action="<?php echo $link?>" method="POST" id="form">
 
     <div class="container">
 

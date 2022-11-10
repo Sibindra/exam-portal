@@ -37,7 +37,7 @@ function sendMail()
         // $mail->send();
 
         // echo $mailNo;
-        header('Location: emailVerification-components/verification.php?requestedEmail='.$to_email);
+        header('Location: emailVerification-components/verification.php?requestedEmail='.base64_encode($to_email));
         exit;
 
     } catch (Exception $e) {

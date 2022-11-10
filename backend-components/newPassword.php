@@ -3,72 +3,44 @@
 // require "./sendEmail.php";
 require "emailConnection.php";
 
-// $emailAddress=$_GET['to_email'];
-
-// echo $emailAddress;
-
-// echo $to_email;
-$emailAddress=$_GET['requestedEmail'];
-echo $emailAddress;
-
-// session_start();
-
 // echo $dB;
-// echo $to_email;
-// echo $_SESSION['emailAddress'];
 
-// echo session_name();
+$emailAddress=$_GET['requestedEmail'];
 
-// echo $abcd;
-// echo $_SESSION['to_email'];
+$mailAddress=base64_decode($emailAddress);
 
-// session_start();
+// echo $mailAddress;
 
-// // connection to localhost
-
-// $server = "localhost";
-// $username = "root";
-// $password = "";
-// $dB = "Exam-Portal";
-
-// $connection = mysqli_connect($server, $username, $password, $dB);
-
-// if (!$conn) {
-//     die("Connect failed:");
-// } else {
-// echo "sucess";
-
-
-
-
-
-// FIXME:email address needs to be taken from emailConnection;
-// echo $to_email;
-
-// $to_email="test@test.com";
-
-// $emailAddress=$to_email;
-
-// // echo $to_email;
-// // echo $emailAddress;
-
+// $mailAddress="dpk.me.123@gmail.com";
+// echo $mailAddress;
 $newPassword = $_POST['newPassword'];
 // echo $newPassword;
 
 
 // query to update passowrd
-$passwordSql = ("UPDATE users SET Password = '$newPassword' WHERE users.Email = '$emailAddress'");
+$passwordSql = ("UPDATE users SET Password = '$newPassword' WHERE users.Email = '$mailAddress'");
+
+$result=mysqli_query($conn,$passwordSql);
+// $passwordSql = "UPDATE users SET Password = '$newPassword' WHERE users.Email = '$emailAddress'";
+
+// echo $passwordSql;
 
 // echo $passwordSql;
 
 // execute query and update values to sql
 if ($conn->query($passwordSql) == TRUE) {
     // echo "changed pwd";
-    echo '<script>alert("Password Changed")</script>';
     header('Location: ../index.html');
+    echo '<script>alert("Password Changed")</script>';
     exit;
+
 } else {
     echo "failed due to " . $conn->error;
 }
+
 //  }
+
+// $answer=mysqli_query($conn,$sql);
+// echo '<script>alert("Password Changed")</script>';
+
 ?>

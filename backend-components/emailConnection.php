@@ -14,7 +14,7 @@ if (!$conn) {
     die("Connect failed:");
 } else {
     // FIXME: code to geneate random no 
-    $code=1111;
+    // $code=1111;
     
     $to_email = $_POST['newEmail'];
 
