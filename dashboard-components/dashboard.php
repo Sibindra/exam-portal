@@ -77,7 +77,7 @@
                     <td><?php echo $data["sub1"] ?></td>
                     <td><?php echo $data["subCode1"] ?></td>
                     <td><?php echo $data["credit1"] ?></td>
-                    <td class=<?php echo $barrierCss ?>> <?php echo $data["barrier1"] ?></td>
+                    <td class=<?php echo $data["barrierCss1"] ?>> <?php echo $data["barrier1"] ?></td>
                     <td><?php echo $data["barrierSubject1"] ?></td>
                     <td><?php echo $data["barrierSem1"] ?></td>
                 </tr>
@@ -87,7 +87,7 @@
                     <td><?php echo $data["sub2"] ?></td>
                     <td><?php echo $data["subCode2"] ?></td>
                     <td><?php echo $data["credit2"] ?></td>
-                    <td class=<?php echo $barrierCss ?>><?php echo $data["barrier2"] ?></td>
+                    <td class=<?php echo $data["barrierCss2"] ?>><?php echo $data["barrier2"] ?></td>
                     <td><?php echo $data["barrierSubject2"] ?></td>
                     <td><?php echo $data["barrierSem2"] ?></td>
                 </tr>
@@ -97,7 +97,7 @@
                     <td><?php echo $data["sub3"] ?></td>
                     <td><?php echo $data["subCode3"] ?></td>
                     <td><?php echo $data["credit3"] ?></td>
-                    <td class=<?php echo $barrierCss ?>><?php echo $data["barrier3"] ?></td>
+                    <td class=<?php echo $data["barrierCss3"] ?>><?php echo $data["barrier3"] ?></td>
                     <td><?php echo $data["barrierSubject3"] ?></td>
                     <td><?php echo $data["barrierSem3"] ?></td>
                 </tr>
@@ -107,7 +107,7 @@
                     <td><?php echo $data["sub4"] ?></td>
                     <td><?php echo $data["subCode4"] ?></td>
                     <td><?php echo $data["credit4"] ?></td>
-                    <td class=<?php echo $barrierCss ?>><?php echo $data["barrier4"] ?></td>
+                    <td class=<?php echo $data["barrierCss4"] ?>><?php echo $data["barrier4"] ?></td>
                     <td><?php echo $data["barrierSubject4"] ?></td>
                     <td><?php echo $data["barrierSem4"] ?></td>
                 </tr>
@@ -117,7 +117,7 @@
                     <td><?php echo $data["sub5"] ?></td>
                     <td><?php echo $data["subCode5"] ?></td>
                     <td><?php echo $data["credit5"] ?></td>
-                    <td class=<?php echo $barrierCss ?>><?php echo $data["barrier5"] ?></td>
+                    <td class=<?php echo $data["barrierCss5"] ?>><?php echo $data["barrier5"] ?></td>
                     <td><?php echo $data["barrierSubject5"] ?></td>
                     <td><?php echo $data["barrierSem5"] ?></td>
                 </tr>
@@ -127,7 +127,7 @@
                     <td><?php echo $data["sub6"] ?></td>
                     <td><?php echo $data["subCode6"] ?></td>
                     <td><?php echo $data["credit6"] ?></td>
-                    <td class=<?php echo $barrierCss ?>><?php echo $data["barrier6"] ?></td>
+                    <td class=<?php echo $data["barrierCss1"] ?>><?php echo $data["barrier6"] ?></td>
                     <td><?php echo $data["barrierSubject6"] ?></td>
                     <td><?php echo $data["barrierSem6"] ?></td>
                 </tr>
@@ -160,7 +160,7 @@
                     <td><?php echo $backData["backSub1"] ?></td>
                     <td><?php echo $backData["subCode1"] ?></td>
                     <td><?php echo $backData["credit1"] ?></td>
-                    <td class=<?php echo $barrierCss ?>><?php echo $backData["barrier1"] ?></td>
+                    <td class=<?php echo $backData["barrierCss1"] ?>><?php echo $backData["barrier1"] ?></td>
                     <td><?php echo $backData["barrierSubject1"] ?></td>
                     <td><?php echo $backData["barrierSem1"] ?></td>
                 </tr>
@@ -170,7 +170,7 @@
                     <td><?php echo $backData["backSub2"] ?></td>
                     <td><?php echo $backData["subCode2"] ?></td>
                     <td><?php echo $backData["credit2"] ?></td>
-                    <td class=<?php echo $barrierCss ?>><?php echo $backData["barrier2"] ?></td>
+                    <td class=<?php echo $backData["barrierCss2"] ?>><?php echo $backData["barrier2"] ?></td>
                     <td><?php echo $backData["barrierSubject2"] ?></td>
                     <td><?php echo $backData["barrierSem2"] ?></td>
                 </tr>
@@ -180,7 +180,7 @@
                     <td><?php echo $backData["backSub3"] ?></td>
                     <td><?php echo $backData["subCode3"] ?></td>
                     <td><?php echo $backData["credit3"] ?></td>
-                    <td class=<?php echo $barrierCss ?>><?php echo $backData["barrier3"] ?></td>
+                    <td class=<?php echo $backData["barrierCss3"] ?>><?php echo $backData["barrier3"] ?></td>
                     <td><?php echo $backData["barrierSubject3"] ?></td>
                     <td><?php echo $backData["barrierSem3"] ?></td>
                 </tr>
@@ -190,7 +190,7 @@
                     <td><?php echo $backData["backSub4"] ?></td>
                     <td><?php echo $backData["subCode4"] ?></td>
                     <td><?php echo $backData["credit4"] ?></td>
-                    <td class=<?php echo $barrierCss ?>><?php echo $backData["barrier4"] ?></td>
+                    <td class=<?php echo $barrierData["barrierCss4"] ?>><?php echo $backData["barrier4"] ?></td>
                     <td><?php echo $backData["barrierSubject4"] ?></td>
                     <td><?php echo $backData["barrierSem4"] ?></td>
                 </tr>
