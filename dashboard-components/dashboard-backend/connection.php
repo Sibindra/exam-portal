@@ -63,13 +63,13 @@
                 $duePayment=$rows["Due"];
 
                 $img=$rows["img_dir"];
-                // $img=$rows["img_dir"];
             }
+
+
         }
 
         else{
             echo "NO MATCH";
         }
 
-        // echo $duePayment;
 ?>
