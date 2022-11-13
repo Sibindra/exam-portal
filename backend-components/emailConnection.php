@@ -18,8 +18,8 @@ if (!$conn) {
 }
 
    
-    // $code=mt_rand(11,99);
-    $code=1111;
+    // $code=mt_rand(1111,9999);
+    // $code=1111;
 
     // echo $code ."<br>";
 

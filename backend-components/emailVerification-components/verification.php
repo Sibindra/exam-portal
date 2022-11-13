@@ -16,8 +16,11 @@
 <?php
     // echo "works";
     $to_email=base64_decode($_GET['requestedEmail']);
+    $code=base64_decode($_GET['code']);
+
+    // echo $code;
     // echo $to_email;
-    $url="../codeVerification.php?requestedEmail=".base64_encode($to_email);
+    $url="../codeVerification.php?requestedEmail=".base64_encode($to_email).'&code='.base64_encode($code);
 ?>
     <form action="<?php echo $url?>" method="POST">
         <div id="hero">
