@@ -57,6 +57,7 @@ $mailNo = mysqli_num_rows($ans);
 if ($mailNo > 0) {
     sendMail();
     // echo "nice";
+    // echo $code;
 } else {
     echo "Email does not exist";
 }

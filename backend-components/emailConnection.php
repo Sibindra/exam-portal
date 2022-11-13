@@ -15,11 +15,26 @@ if (!$conn) {
 } else {
     // FIXME: code to geneate random no 
     // $code=1111;
+}
+
+   
+    // $code=mt_rand(11,99);
+    $code=1111;
+
+    // echo $code ."<br>";
+
+    // $code2=$code;
+
+    // echo $code2;
+    // echo $randomCode . "<br>";
+
+    // $code=$randomCode;
+
+    // echo $randomCode;
     
     $to_email = $_POST['newEmail'];
 
     // echo $to_email;
-}
     // generate 4 digit code
     // FIXME: mt_rand generaes new valie everytime it is called
     // static $code = mt_rand(1111,9999);
