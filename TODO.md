@@ -1,0 +1,8 @@
+-[] remember me
+-[] recipt 
+-[] form auto fill
+-[] code generation 
+-[] submit form to database
+-[] payment css
+-[] payment span
+-[] image autofill

@@ -50,6 +50,8 @@
                 $img=$rows["img_dir"];
             }
 
+        
+        $sub1=
 
         }
 
