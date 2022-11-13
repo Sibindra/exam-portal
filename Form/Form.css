@@ -3,7 +3,19 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-size: 3vw;
 }
+
+ /* Hide scrollbar for Chrome, Safari and Opera */
+ body::-webkit-scrollbar ,#frm::-webkit-scrollbar{
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  body,#frm {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  } 
 
 #frm{
     height: 100vh;

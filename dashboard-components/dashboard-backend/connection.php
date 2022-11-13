@@ -50,6 +50,20 @@
                 $img=$rows["img_dir"];
             }
 
+        
+        $subQuery="SELECT * FROM `Regular Subjects` where Year='$year'";
+
+        $r=$con->query($subQuery);
+
+        if($r->num_rows>0){
+            while($subjects=$r->fetch_assoc()){
+                $sub=$subjects["Subject"];
+
+            };
+
+            echo $sub;
+
+        }
 
         }
 
