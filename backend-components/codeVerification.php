@@ -14,7 +14,10 @@
 // }
 
 // $code=1111;
- echo $code;
+
+$code=base64_decode($_GET["code"]);
+
+// echo $code;
 $to_email=base64_decode($_GET['requestedEmail']);
     // echo $to_email;
 
