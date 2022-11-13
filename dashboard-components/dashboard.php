@@ -6,13 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
 </head>
 
 <body>
     <?php
     include("dashboard-backend/connection.php");
-    
     ?>
     <div id="heropage">
         <div id="header">
@@ -56,6 +55,7 @@
 
             <div id="image">
                 <img src="<?php echo $img?>" alt="photoFrame" />
+                <!-- <img src="deepak_rana.jpeg" alt="photoFrame" /> -->
             </div>
         </div>
 
