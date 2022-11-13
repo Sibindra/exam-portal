@@ -52,21 +52,43 @@ if ($ans->num_rows > 0) {
     $data = array();
     $index = 1;
 
-    $subQuery = "SELECT Subject FROM `Regular Subjects` where Year='$year'";
+    $subQuery = "SELECT * FROM `Regular Subjects` where Year='$year'";
     $r = $con->query($subQuery);
 
     if($r->num_rows>0){
-        while($subjects=$r->fetch_assoc()){
+        while($rows=$r->fetch_assoc()){
        
-        $subx=$subjects["Subject"];
+        $subx=$rows["Subject"];
+        $subCodex=$rows["Subject Code"];
+        $creditx=$rows["Credit Hrs"];
+        $barrierSubjectx=$rows["Barrier Subject"];
+        $barrierSemx=$rows["Barrier Semester"];
+        $barrierx=$rows["Barrier Status"];
+
+        if($barrierx=="Not Barrier"){
+            $barrierCss="notbarrier";
+        }else{
+            $barrierCss="barrier";
+        }
+
+        // echo $barrierCss."   ";
+
+
+        // echo $barrierSubjectx;
+        // echo $creditx;
+        // echo $subCodex;
         // echo $subx;
         $data["sub".$index]=$subx;
+        $data["subCode".$index]=$subCodex;
+        $data["credit".$index]=$creditx;
+        $data["barrierSubject".$index]=$barrierSubjectx;
+        $data["barrierSem".$index]=$barrierSemx;
+        $data["barrier".$index]=$barrierx;
 
         $index++;
         
     };
-    // each no is the suject 
-    // echo $data["sub1"];
+   
 
     }
 
