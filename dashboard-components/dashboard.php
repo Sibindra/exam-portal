@@ -33,27 +33,27 @@
 
         <div id="stddetails">
             <div id="firsthalf">
-                <span class="s">Symbol No: <?php echo $symbolNo?></span>
-                <span class="s">Name: <?php echo $name?></span>
-                <span class="s">Faculty: <?php echo $faculty?></span>
-                <span class="s">Year: <?php echo $year?></span>
-                <span class="s">Name of college: <?php echo $collegeName?></span>
-                <span class="s">University: <?php echo $uni?></span>
+                <span class="s">Symbol No: <?php echo $symbolNo ?></span>
+                <span class="s">Name: <?php echo $name ?></span>
+                <span class="s">Faculty: <?php echo $faculty ?></span>
+                <span class="s">Year: <?php echo $year ?></span>
+                <span class="s">Name of college: <?php echo $collegeName ?></span>
+                <span class="s">University: <?php echo $uni ?></span>
             </div>
             <div class="secondhalf">
                 <div id="internaldiv">
-                    <span class="s">Reg no: <?php echo $regNo?></span>
-                    <span class="s">Roll no: <?php echo $rollNo?></span>
-                    <span class="s">Programme: <?php echo $programme?></span>
+                    <span class="s">Reg no: <?php echo $regNo ?></span>
+                    <span class="s">Roll no: <?php echo $rollNo ?></span>
+                    <span class="s">Programme: <?php echo $programme ?></span>
                 </div>
 
                 <div class="duepayment">
-                    <span class="s">Due Payment: <?php echo $duePayment?></span>
+                    <span class="s">Due Payment: <?php echo $duePayment ?></span>
                 </div>
             </div>
 
             <div id="image">
-                <img src="<?php echo $img?>" alt="photoFrame" />
+                <img src="<?php echo $img ?>" alt="photoFrame" />
             </div>
         </div>
 
@@ -74,45 +74,71 @@
 
                 <tr>
                     <td>01</td>
-                    <td>Enigeering Mathematics II</td>
-                    <td>1213</td>
-                    <td>3 hrs</td>
-                    <td class="barrier">Barrier</td>
-                    <td>Engineering Mathematics IV</td>
-                    <td>4th</td>
+                    <td><?php echo $data["sub1"] ?></td>
+                    <td><?php echo $data["subCode1"] ?></td>
+                    <td><?php echo $data["credit1"] ?></td>
+                    <td class=<?php echo $barrierCss ?>> <?php echo $data["barrier1"] ?></td>
+                    <td><?php echo $data["barrierSubject1"] ?></td>
+                    <td><?php echo $data["barrierSem1"] ?></td>
                 </tr>
 
                 <tr>
                     <td>02</td>
-                    <td>Mathematical Foundation in Computer Science</td>
-                    <td>1114</td>
-                    <td>2 hrs</td>
-                    <td class="notbarrier">Not Barrier</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td><?php echo $data["sub2"] ?></td>
+                    <td><?php echo $data["subCode2"] ?></td>
+                    <td><?php echo $data["credit2"] ?></td>
+                    <td class=<?php echo $barrierCss ?>><?php echo $data["barrier2"] ?></td>
+                    <td><?php echo $data["barrierSubject2"] ?></td>
+                    <td><?php echo $data["barrierSem2"] ?></td>
                 </tr>
 
                 <tr>
                     <td>03</td>
-                    <td>Physics</td>
-                    <td>5498</td>
-                    <td>3 hrs</td>
-                    <td class="notbarrier">Not Barrier</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td><?php echo $data["sub3"] ?></td>
+                    <td><?php echo $data["subCode3"] ?></td>
+                    <td><?php echo $data["credit3"] ?></td>
+                    <td class=<?php echo $barrierCss ?>><?php echo $data["barrier3"] ?></td>
+                    <td><?php echo $data["barrierSubject3"] ?></td>
+                    <td><?php echo $data["barrierSem3"] ?></td>
                 </tr>
 
                 <tr>
                     <td>04</td>
-                    <td>Object Oriented Programming in C++</td>
-                    <td>2014</td>
-                    <td>4 hrs</td>
-                    <td class="notbarrier">Not Barrier</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td><?php echo $data["sub4"] ?></td>
+                    <td><?php echo $data["subCode4"] ?></td>
+                    <td><?php echo $data["credit4"] ?></td>
+                    <td class=<?php echo $barrierCss ?>><?php echo $data["barrier4"] ?></td>
+                    <td><?php echo $data["barrierSubject4"] ?></td>
+                    <td><?php echo $data["barrierSem4"] ?></td>
+                </tr>
+
+                <tr>
+                    <td>05</td>
+                    <td><?php echo $data["sub5"] ?></td>
+                    <td><?php echo $data["subCode5"] ?></td>
+                    <td><?php echo $data["credit5"] ?></td>
+                    <td class=<?php echo $barrierCss ?>><?php echo $data["barrier5"] ?></td>
+                    <td><?php echo $data["barrierSubject5"] ?></td>
+                    <td><?php echo $data["barrierSem5"] ?></td>
+                </tr>
+
+                <tr>
+                    <td>06</td>
+                    <td><?php echo $data["sub6"] ?></td>
+                    <td><?php echo $data["subCode6"] ?></td>
+                    <td><?php echo $data["credit6"] ?></td>
+                    <td class=<?php echo $barrierCss ?>><?php echo $data["barrier6"] ?></td>
+                    <td><?php echo $data["barrierSubject6"] ?></td>
+                    <td><?php echo $data["barrierSem6"] ?></td>
                 </tr>
             </table>
         </div>
+
+
+
+
+
+
 
         <!-- Back Subject details -->
         <div id="backsubdetails">
@@ -131,42 +157,42 @@
 
                 <tr>
                     <td>01</td>
-                    <td>Enigeering Mathematics II</td>
-                    <td>1213</td>
-                    <td>3 hrs</td>
-                    <td class="barrier">Barrier</td>
-                    <td>Engineering Mathematics IV</td>
-                    <td>4th</td>
+                    <td><?php echo $backData["backSub1"] ?></td>
+                    <td><?php echo $backData["subCode1"] ?></td>
+                    <td><?php echo $backData["credit1"] ?></td>
+                    <td class=<?php echo $barrierCss ?>><?php echo $backData["barrier1"] ?></td>
+                    <td><?php echo $backData["barrierSubject1"] ?></td>
+                    <td><?php echo $backData["barrierSem1"] ?></td>
                 </tr>
 
                 <tr>
                     <td>02</td>
-                    <td>Mathematical Foundation in Computer Science</td>
-                    <td>1114</td>
-                    <td>2 hrs</td>
-                    <td class="notbarrier">Not Barrier</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td><?php echo $backData["backSub2"] ?></td>
+                    <td><?php echo $backData["subCode2"] ?></td>
+                    <td><?php echo $backData["credit2"] ?></td>
+                    <td class=<?php echo $barrierCss ?>><?php echo $backData["barrier2"] ?></td>
+                    <td><?php echo $backData["barrierSubject2"] ?></td>
+                    <td><?php echo $backData["barrierSem2"] ?></td>
                 </tr>
 
                 <tr>
                     <td>03</td>
-                    <td>Physics</td>
-                    <td>5498</td>
-                    <td>3 hrs</td>
-                    <td class="notbarrier">Not Barrier</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td><?php echo $backData["backSub3"] ?></td>
+                    <td><?php echo $backData["subCode3"] ?></td>
+                    <td><?php echo $backData["credit3"] ?></td>
+                    <td class=<?php echo $barrierCss ?>><?php echo $backData["barrier3"] ?></td>
+                    <td><?php echo $backData["barrierSubject3"] ?></td>
+                    <td><?php echo $backData["barrierSem3"] ?></td>
                 </tr>
 
                 <tr>
                     <td>04</td>
-                    <td>Object Oriented Programming in C++</td>
-                    <td>2014</td>
-                    <td>4 hrs</td>
-                    <td class="notbarrier">Not Barrier</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td><?php echo $backData["backSub4"] ?></td>
+                    <td><?php echo $backData["subCode4"] ?></td>
+                    <td><?php echo $backData["credit4"] ?></td>
+                    <td class=<?php echo $barrierCss ?>><?php echo $backData["barrier4"] ?></td>
+                    <td><?php echo $backData["barrierSubject4"] ?></td>
+                    <td><?php echo $backData["barrierSem4"] ?></td>
                 </tr>
             </table>
         </div>
