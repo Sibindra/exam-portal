@@ -62,6 +62,14 @@ if ($ans->num_rows > 0) {
             $barrierSemx = $rows["Barrier Semester"];
             $barrierx = $rows["Barrier Status"];
 
+            if ($barrierx == "Barrier") {
+                $barrierCssx = "barrier";
+            } else if ($barrierx == "Not Barrier") {
+                $barrierCssx = "notbarrier";
+            } else {
+                $barrierCssx = NULL;
+            }
+
             // echo $barrierSubjectx;
             // echo $creditx;
             // echo $subCodex;
@@ -72,6 +80,8 @@ if ($ans->num_rows > 0) {
             $data["barrierSubject" . $index] = $barrierSubjectx;
             $data["barrierSem" . $index] = $barrierSemx;
             $data["barrier" . $index] = $barrierx;
+
+            $data["barrierCss" . $index] = $barrierCssx;
 
             $index++;
         };
@@ -101,13 +111,23 @@ if ($ans->num_rows > 0) {
                 $backData["subCode" . $i] = $subCodex;
                 $backData["credit" . $i] = $credit;
                 $backData["barrier" . $i] = $barrierx;
-                $backData["barrierSubject".$i]=$barrierSubjectx;
-                $backData["barrierSem".$i]=$barrierSemx;
+                $backData["barrierSubject" . $i] = $barrierSubjectx;
+                $backData["barrierSem" . $i] = $barrierSemx;
+
+
+                if ($barrierx == "Barrier") {
+                    $barrierCssx = "barrier";
+                } else if ($barrierx == "Not Barrier") {
+                    $barrierCssx = "notbarrier";
+                } else {
+                    $barrierCssx = NULL;
+                }
+
+                $backData["barrierCss" . $i] = $barrierCssx;
                 $i++;
-
-
-
             }
+
+            // echo $backData["barrierCss1"];
             // echo $backData["barrierSem3"];
             // echo $backData["barrierSubject3"];
             // echo $backData["barrier3"];
@@ -115,10 +135,11 @@ if ($ans->num_rows > 0) {
             // echo $data["subCode1"];
             // echo $backData["credit1"];
             // echo $backData["barrier1"];
-            
+
 
         }
     }
 } else {
     echo "NO MATCH";
 }
+?>
