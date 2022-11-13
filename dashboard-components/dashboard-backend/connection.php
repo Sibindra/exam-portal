@@ -44,10 +44,8 @@ if ($ans->num_rows > 0) {
         $regNo = $rows["Regno"];
         $programme = $rows["Programme"];
         $duePayment = $rows["Due"];
-
         $img = $rows["img_dir"];
     }
-
 
     $data = array();
     $index = 1;
@@ -55,43 +53,72 @@ if ($ans->num_rows > 0) {
     $subQuery = "SELECT * FROM `Regular Subjects` where Year='$year'";
     $r = $con->query($subQuery);
 
-    if($r->num_rows>0){
-        while($rows=$r->fetch_assoc()){
-       
-        $subx=$rows["Subject"];
-        $subCodex=$rows["Subject Code"];
-        $creditx=$rows["Credit Hrs"];
-        $barrierSubjectx=$rows["Barrier Subject"];
-        $barrierSemx=$rows["Barrier Semester"];
-        $barrierx=$rows["Barrier Status"];
+    if ($r->num_rows > 0) {
+        while ($rows = $r->fetch_assoc()) {
+            $subx = $rows["Subject"];
+            $subCodex = $rows["Subject Code"];
+            $creditx = $rows["Credit Hrs"];
+            $barrierSubjectx = $rows["Barrier Subject"];
+            $barrierSemx = $rows["Barrier Semester"];
+            $barrierx = $rows["Barrier Status"];
 
-        if($barrierx=="Not Barrier"){
-            $barrierCss="notbarrier";
-        }else{
-            $barrierCss="barrier";
+            // echo $barrierSubjectx;
+            // echo $creditx;
+            // echo $subCodex;
+            // echo $subx;
+            $data["sub" . $index] = $subx;
+            $data["subCode" . $index] = $subCodex;
+            $data["credit" . $index] = $creditx;
+            $data["barrierSubject" . $index] = $barrierSubjectx;
+            $data["barrierSem" . $index] = $barrierSemx;
+            $data["barrier" . $index] = $barrierx;
+
+            $index++;
+        };
+
+
+        // back subjects
+        // echo $symbolNo;
+
+        $backQuery = "SELECT * FROM `Back Subjects` WHERE Symbol='$symbolNo'";
+        $a = $con->query($backQuery);
+
+        $backData = array();
+        $i = 1;
+
+        if ($a->num_rows > 0) {
+            while ($rows = $a->fetch_assoc()) {
+                $backSubx = $rows["Subject"];
+                $subCodex = $rows["Subject Code"];
+                $credit = $rows["Credit Hrs"];
+                $barrierx = $rows["Barrier Status"];
+                $barrierSubjectx = $rows["Barrier Subject"];
+                $barrierSemx = $rows["Barrier Semester"];
+                // echo $barrierSubjectx;
+
+
+                $backData["backSub" . $i] = $backSubx;
+                $backData["subCode" . $i] = $subCodex;
+                $backData["credit" . $i] = $credit;
+                $backData["barrier" . $i] = $barrierx;
+                $backData["barrierSubject".$i]=$barrierSubjectx;
+                $backData["barrierSem".$i]=$barrierSemx;
+                $i++;
+
+
+
+            }
+            // echo $backData["barrierSem3"];
+            // echo $backData["barrierSubject3"];
+            // echo $backData["barrier3"];
+            // echo $data["backSub1"];
+            // echo $data["subCode1"];
+            // echo $backData["credit1"];
+            // echo $backData["barrier1"];
+            
+
         }
-
-        // echo $barrierCss."   ";
-
-
-        // echo $barrierSubjectx;
-        // echo $creditx;
-        // echo $subCodex;
-        // echo $subx;
-        $data["sub".$index]=$subx;
-        $data["subCode".$index]=$subCodex;
-        $data["credit".$index]=$creditx;
-        $data["barrierSubject".$index]=$barrierSubjectx;
-        $data["barrierSem".$index]=$barrierSemx;
-        $data["barrier".$index]=$barrierx;
-
-        $index++;
-        
-    };
-   
-
     }
-
 } else {
     echo "NO MATCH";
 }
