@@ -45,7 +45,6 @@
                     <span class="s">Reg no: <?php echo $regNo?></span>
                     <span class="s">Roll no: <?php echo $rollNo?></span>
                     <span class="s">Programme: <?php echo $programme?></span>
-                    <!-- <span class="s"></span> -->
                 </div>
 
                 <div class="duepayment">
@@ -55,7 +54,6 @@
 
             <div id="image">
                 <img src="<?php echo $img?>" alt="photoFrame" />
-                <!-- <img src="deepak_rana.jpeg" alt="photoFrame" /> -->
             </div>
         </div>
 

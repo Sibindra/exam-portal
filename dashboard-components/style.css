@@ -14,7 +14,7 @@
 }
 
 #image{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
