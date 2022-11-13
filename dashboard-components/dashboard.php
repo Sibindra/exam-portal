@@ -74,7 +74,7 @@
 
                 <tr>
                     <td>01</td>
-                    <td>Enigeering Mathematics II</td>
+                    <td><?php echo $data["sub1"] ?></td>
                     <td>1213</td>
                     <td>3 hrs</td>
                     <td class="barrier">Barrier</td>
@@ -84,7 +84,7 @@
 
                 <tr>
                     <td>02</td>
-                    <td>Mathematical Foundation in Computer Science</td>
+                    <td><?php echo $data["sub2"] ?></td>
                     <td>1114</td>
                     <td>2 hrs</td>
                     <td class="notbarrier">Not Barrier</td>
@@ -94,7 +94,7 @@
 
                 <tr>
                     <td>03</td>
-                    <td>Physics</td>
+                    <td><?php echo $data["sub3"] ?></td>
                     <td>5498</td>
                     <td>3 hrs</td>
                     <td class="notbarrier">Not Barrier</td>
@@ -104,7 +104,7 @@
 
                 <tr>
                     <td>04</td>
-                    <td>Object Oriented Programming in C++</td>
+                    <td><?php echo $data["sub4"] ?></td>
                     <td>2014</td>
                     <td>4 hrs</td>
                     <td class="notbarrier">Not Barrier</td>
