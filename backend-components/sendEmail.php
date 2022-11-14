@@ -38,7 +38,7 @@ function sendMail()
         $mail->Body    = "Your verification code is: '$code'";
         
         // FIXME:enable this
-        $mail->send();
+        // $mail->send();
 
         // echo $mailNo;
         header('Location: emailVerification-components/verification.php?requestedEmail='.base64_encode($to_email).'&code='.base64_encode($code));
